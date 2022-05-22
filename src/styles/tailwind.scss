@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@tailwind base;
+@layer base {
+
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply overflow-x-hidden overflow-y-scroll text-white;
+  }
+
+  li {
+    @apply text-xl font-semibold
+  }
+  ul {
+    @apply text-xl font-semibold
+  }
+  h1,h2,h3,h4 {
+    @apply font-extrabold mb-3
+  }
+  h1 {
+    @apply text-5xl md:text-6xl
+  }
+  h2 {
+    @apply text-4xl
+  }
+  h3 {
+    @apply text-3xl
+  }
+  h4 {
+    @apply text-2xl
+  }
+  p {
+    @apply text-xl
+  }
+
+  iframe {
+    @apply my-2
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @variants hover, focus {
+    .px-page {
+      @apply px-0 md:px-0;
+    }
+  }
+}
