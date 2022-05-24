@@ -1,14 +1,13 @@
-import React, {ReactNode} from 'react';
+import React, { ReactNode } from 'react';
 import { useState, useEffect } from 'react';
 import Button from './Button'
 import Container from './Container';
 import Image from 'next/Image';
-import {IconArrowUpCircle} from "@tabler/icons";
 
 type ButtonProps = {
     className?: string,
     titleName?: string,
-    children?: ReactNode
+    children: ReactNode
 }
 
 const B787Hero = (props: ButtonProps) => {
@@ -30,22 +29,22 @@ const B787Hero = (props: ButtonProps) => {
                 </div>
             </div>
             <div className="absolute h-fit w-full place-content-center grid">
-                <div className={`cursor-pointer ${props.className}`} onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
+                <Button className="absolute flex justify-center grid place-items-center w-40 h-12 bg-blue-tailwind hover:bg-sky-400">
+                    Download
+                </Button>
+                <div className={`cursor-pointer flex justify-between ${props.className}`} onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
                      <span
                          draggable="false"
                          onClick={() => setIsShown(!isShown)}
                          className="px-5"
                      >
-                <Button className="absolute flex justify-center grid place-items-center w-40 h-12 bg-blue-tailwind text-white hover:bg-white hover:text-navy">
-                    Download
-                </Button>
-                            <Button className={`${isShown && 'rot'} bg-amber-400 duration-300 self-center`}>
+                            <Button className={`${isShown} w-40 bg-emerald-500 hover:bg-white hover:text-navy`}>
                                 Stable {props.titleName}
                             </Button>
-                          <Button className={`${isShown && 'rot'} bg-amber-400 duration-300 self-center`}>
+                          <Button className={`${isShown} w-40 bg-blue-sky hover:bg-white hover:text-navy`}>
                                 Dev {props.titleName}
                             </Button>
-                          <Button className={`${isShown && 'rot'} bg-amber-400 duration-300 self-center`}>
+                          <Button className={`${isShown} w-40 bg-red-600 hover:bg-white hover:text-navy`}>
                                 Experimental {props.titleName}
                             </Button>
                      </span>
