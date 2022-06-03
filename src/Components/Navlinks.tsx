@@ -10,7 +10,7 @@ export type LinkProps = {
 };
 
 const NavLink = ({ name, path, external, className }: LinkProps) => (
-    <ul className={`transition w-full cursor-pointer hover:text-blue-sky ${className}`}>
+    <ul className={`transition w-full cursor-pointer hover:text-blue-sky md:text-lg text-sm ${className}`}>
         {
             external ? (
                 <a href={path}>
@@ -29,7 +29,7 @@ const NavLink = ({ name, path, external, className }: LinkProps) => (
 const NavLinks = (props: {className?: string }) => {
 
     return (
-        <span className={`relative flex justify-center min-w-screen h-fit space-x-6 ${props.className}`}>
+        <span className={`relative flex justify-right min-w-screen h-fit space-x-6 md:text-lg text-sm ${props.className}`}>
             {useRouter().pathname !== '/' && <NavLink name={"Home"} path={"/"} />}
             <NavLink name={"Downloads"} path={"/"} />
             <NavLink name={"News"} path={"/"} />

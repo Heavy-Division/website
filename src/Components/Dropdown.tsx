@@ -22,13 +22,13 @@ export const Dropdown = (props: DropdownProps) => {
                 onClick={() => setIsShown(!isShown)}
                 className="py-5"
             >
-                <span className={`inline-flex group hover:text-blue-sky ${isShown && 'text-teal'}`}>
+                <span className={`inline-flex group hover:text-blue-sky ${isShown && 'text-blue-sky'}`}>
                     {props.titleName}
                     <IconArrowUpCircle className={`${isShown && 'rotate-180'} text-blue-sky duration-300 self-center`} size={25} />
                 </span>
                 {isShown && (
                     <div className="relative">
-                        <ul className="flex right-0 flex-col gap-y-4 py-1 mt-4 w-56 rounded-md md:absolute md:bg-transparent md:border-2 md:border-sky-50 md:ring-1 md:shadow-lg ring-black/10">
+                        <ul className="flex right-0 bg-slate-700 flex-col gap-y-4 py-1 mt-4 w-56 rounded-md md:absolute md:bg-slate-700 md:shadow-lg ring-black/10">
                             {props.children}
                         </ul>
                     </div>

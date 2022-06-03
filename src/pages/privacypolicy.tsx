@@ -1,7 +1,6 @@
 import { useRef } from 'react';
 import Image from 'next/image';
 
-
 const Privacy = () => {
     const bodyRef = useRef<HTMLDivElement>(null);
     const handleScroll = () => {
@@ -21,7 +20,7 @@ const Privacy = () => {
                 </div>
                 <div className="flex absolute top-0 bottom-0 z-20 justify-center w-full">
                     <div className="relative justify-center my-auto text-center sm:flex sm:space-x-10 sm:divide-x md:w-4/5 xl:justify-start xl:w-3/4 sm:item-center">
-                   
+
 
                         <div className="mx-auto w-1/2 text-center sm:space-x-10 md:text-left">
                             <div className="space-y-2 w-full divide-y divide-gray-400 sm:ml-10">
@@ -45,7 +44,7 @@ const Privacy = () => {
                 <h1 className="mt-40 text-6xl font-semibold text-blue-light">Privacy Policy</h1>
                 <div className="mt-2">
                     <p>Effective: 21/12/2020</p>
-                    <p>Author: Nathan Innes</p>
+                    <p>Author: Yoshi Nakajima</p>
                 </div>
                 <div className="w-0">
                     <a className="hover:text-blue-light underline" href="https://github.com/flybywiresim/manuals/raw/master/pdf/Privacy%20Policy.pdf" target="_blank" rel="noreferrer">
