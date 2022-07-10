@@ -26,6 +26,7 @@ module.exports = {
       colors: {
         colors,
         'navy': '#080D19',
+        'light-navy': '#202E4C',
         'purple': '#7e5bef',
         'pink': '#ff49db',
         'orange': '#ff7849',

@@ -1,59 +1,32 @@
-import React, { ReactNode } from 'react';
-import { useState, useEffect } from 'react';
+import React from 'react';
 import Button from './Button'
 import Container from './Container';
-import Image from 'next/Image';
+import { ScrollToTopButton } from './ScrollToTopButton';
 
-type ButtonProps = {
-    className?: string,
-    titleName?: string,
-    children: ReactNode
-}
+const B787Hero = () => {
 
-const B787Hero = (props: ButtonProps) => {
-    const [isShown, setIsShown] = useState(false);
     return (
-        <header className="overflow-y-scroll h-screen">
-            <Container className="overflow-y-scroll relative max-w-screen h-96">
-        <div className="screen min-h-screen fixed bg-navy">
-            <div className="relative flex justify-center min-w-screen h-fit top-24">
-            <Image src="/B78XH.svg"  height={200} width={500} />
-        </div>
-
-            <div className="object-cover flex justify-center">
-                <div className="relative h-5/6 w-5/6 pl-5 pr-5">
-                    <Image
-                        className="absolute"
-                        src="/787.svg" // TODO: This image is copyrighted, will need to make a custom svg for production build.
-                        height={1000} width={2000} />
-                </div>
-            </div>
-            <div className="absolute h-fit w-full place-content-center grid">
-                <Button className="absolute flex justify-center grid place-items-center w-40 h-12 bg-blue-tailwind hover:bg-sky-400">
-                    Download
-                </Button>
-                <div className={`cursor-pointer flex justify-between ${props.className}`} onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
-                     <span
-                         draggable="false"
-                         onClick={() => setIsShown(!isShown)}
-                         className="px-5"
-                     >
-                            <Button className={`${isShown} w-40 bg-emerald-500 hover:bg-white hover:text-navy`}>
-                                Stable {props.titleName}
-                            </Button>
-                          <Button className={`${isShown} w-40 bg-blue-sky hover:bg-white hover:text-navy`}>
-                                Dev {props.titleName}
-                            </Button>
-                          <Button className={`${isShown} w-40 bg-red-600 hover:bg-white hover:text-navy`}>
-                                Experimental {props.titleName}
-                            </Button>
-                     </span>
-                </div>
-            </div>
-        </div>
-           </Container>
-       </header>
+        <header>
+            <video
+                className="object-cover fixed w-screen h-screen opacity-40 -z-10"
+                src="https://cdn.discordapp.com/attachments/429734269838032898/995401479328378992/2022-07-09_11-33-29.mp4"
+                playsInline
+                autoPlay
+                muted
+                loop
+            />
+            <Container className=" min-h-screen">
+                    <Button className="absolute right-1/3 top-1/3 h-14 bg-blue-sky w-40 mx-3 md:w-30 md:text-lg transition hover:opacity-70 font-medium">
+                        Download
+                    </Button>
+                    <Button className="absolute left-2/3 top-1/3 h-14 bg-blue-tailwind w-40 md:w-30 md:text-lg transition hover:opacity-70 font-medium">
+                       Learn More
+                    </Button>
+            </Container>
+            <ScrollToTopButton />
+        </header>
     )
 };
 
 export default B787Hero;
+
