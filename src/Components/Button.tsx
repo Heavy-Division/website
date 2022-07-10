@@ -10,7 +10,7 @@ const Button = (props: ButtonProps) => (
     <button
         onClick={props.onClick}
         type="button"
-        className={`transition rounded-3xl py-2 text-xl shadow-md-dark-contrast font-bold ${props.className}`}
+        className={`transition rounded-xl py-2 shadow-lg-dark-contrast ${props.className}`}
     >
         {props.children}
     </button>

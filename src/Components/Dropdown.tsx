@@ -1,5 +1,5 @@
 import { ReactNode, useState } from 'react';
-import { IconArrowUpCircle } from '@tabler/icons';
+import { IoCaretUpCircle } from 'react-icons/io5';
 
 type DropdownProps = {
     className?: string,
@@ -24,7 +24,7 @@ export const Dropdown = (props: DropdownProps) => {
             >
                 <span className={`inline-flex group hover:text-blue-sky ${isShown && 'text-blue-sky'}`}>
                     {props.titleName}
-                    <IconArrowUpCircle className={`${isShown && 'rotate-180'} text-blue-sky duration-300 self-center`} size={25} />
+                    <IoCaretUpCircle className={`${isShown && 'rotate-180'} text-blue-sky duration-300 self-center`} size={25} />
                 </span>
                 {isShown && (
                     <div className="relative">
