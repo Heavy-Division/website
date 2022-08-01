@@ -9,7 +9,7 @@ const Navbar = () => {
     return (
            <Nav>
                    <div className="py-2 px-3">
-               <Image src={logoUrl} height={50} width={250} objectFit="contain" />
+               <Image src={logoUrl} height={50} width={250} draggable={false} objectFit="contain" />
                    </div>
                <Container className="flex justify-end">
                <span className="p-2">

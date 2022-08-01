@@ -1,30 +1,32 @@
 import React from 'react';
-import Button from './Button'
 import Container from './Container';
-import { ScrollToTopButton } from './ScrollToTopButton';
+import Button from './Button';
+import motion from 'framer-motion';
 
 const B787Hero = () => {
+        return (
+            <section className="h-screen w-screen">
+                <video
+                    className="object-cover fixed -z-10 w-screen h-screen opacity-30"
+                    src="https://media.istockphoto.com/videos/aerial-view-of-london-skyline-hyperlapse-video-id1196816851"
+                    playsInline
+                    autoPlay
+                    muted
+                    loop
+                />
+                <Container>
+                    <Button className="absolute top-3/4 left-1/2 md:w-64 md:h-24 bg-blue-tailwind text-3xl">
+                        <a href="">Download</a>
+                    </Button>
+                    <Button className="absolute top-3/4 left-3/4 md:w-64 md:h-24 bg-blue-sky text-3xl">
+                        <a href="">About</a>
+                    </Button>
 
-    return (
-        <header>
-            <video
-                className="object-cover fixed w-screen h-screen opacity-40 -z-10"
-                src="https://cdn.discordapp.com/attachments/429734269838032898/995401479328378992/2022-07-09_11-33-29.mp4"
-                playsInline
-                autoPlay
-                muted
-                loop
-            />
-            <Container className=" min-h-screen">
-                    <Button className="absolute right-1/3 top-1/3 h-14 bg-blue-sky w-40 mx-3 md:w-30 md:text-lg transition hover:opacity-70 font-medium">
-                        Download
-                    </Button>
-                    <Button className="absolute left-2/3 top-1/3 h-14 bg-blue-tailwind w-40 md:w-30 md:text-lg transition hover:opacity-70 font-medium">
-                       Learn More
-                    </Button>
-            </Container>
-            <ScrollToTopButton />
+
+                    <header>
         </header>
+                </Container>
+            </section>
     )
 };
 
