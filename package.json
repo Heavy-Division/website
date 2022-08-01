@@ -11,7 +11,7 @@
     "@types/react": "^18.0.8",
     "@types/react-dom": "^18.0.3",
     "framer-motion": "^6.5.1",
-    "next": "^12.2.2",
+    "next": "^12.2.3",
     "next-images": "^1.8.4",
     "next.js": "^1.0.3",
     "node-sass": "^7.0.1",
