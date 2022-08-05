@@ -37,6 +37,7 @@ module.exports = {
         'gray-light': '#d3dce6',
         'white': '#f4f4f4',
         'pure-white':'#ffffff',
+        'green-contrast': '#4EF07B',
         blue: {
           'tailwind': '#0761e2',
           'sky': '#3eb1ff',
@@ -64,6 +65,12 @@ module.exports = {
           '4': '24rem',
           '5': '32rem',
           '6': '48rem',
+          '7': '64rem',
+          '8': '80rem',
+          '9': '96rem',
+          '10': '112rem',
+          '11': '128rem',
+          '12': '144rem',
         },
         borderRadius: {
           '4xl': '2rem',

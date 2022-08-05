@@ -49,7 +49,7 @@ export const Nav = (props: Navprops) => {
     }
     return (
             <nav
-                className={`flex fixed h-18 w-full p-1 z-10 ${scroll || isOpen ? 'transition bg-light-navy shadow-lg-dark' : 'transition bg-transparent'}`}
+                className={`flex fixed h-18 w-full p-1 z-10 ${scroll || isOpen ? 'transition bg-slate-900 shadow-lg-dark' : 'transition bg-transparent'}`}
                 onClick={handleClick}
                 >
                 {props.children}
@@ -66,7 +66,7 @@ export const NavLink = (props: Linkprops) => {
 };
 
 export const DropdownItem = (props: { children: ReactNode }) => (
-    <li className="py-1 px-4 text-gray-200 hover:text-teal md:text-gray-700 md:hover:text-gray-900 md:hover:bg-gray-100">
+    <li className="flex justify-center py-2 px-3 mx-3 text-gray-200 hover:bg-blue-tailwind rounded-md cursor-pointer transition duraiton-300 md:text-gray-700 md:hover:text-gray-900 md:hover:bg-gray-100">
         {props.children}
     </li>
 );
@@ -74,7 +74,7 @@ export const DropdownItem = (props: { children: ReactNode }) => (
 export const Dropdown = (props: Dropdownprops) => {
     const [isOpen, setOpen] = useState(false);
     return (
-        <li className={`list-none cursor-pointer ${props.className}`} onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
+        <li className={`list-none ${props.className}`} onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
             <span
                 draggable="false"
                 onClick={() => setOpen(!isOpen)}
@@ -82,11 +82,11 @@ export const Dropdown = (props: Dropdownprops) => {
             >
                 <span className={`inline-flex group hover:text-teal ${isOpen && 'text-blue-sky'}`}>
                     {props.titleName}
-                    <IoCaretUpCircleSharp className={`${isOpen && '-rotate-180'} transition duration-200 self-center`} size={20} />
+                    <IoCaretUpCircleSharp className={`${isOpen && 'rotate-180'} transition self-center mx-3`} size={20} />
                 </span>
                 {isOpen && (
-                    <div className="relative">
-                        <ul className="flex h-fit flex-col gap-y-3 py-1 mt-4 w-56 rounded-md md:absolute md:bg-navy md:ring-1 md:shadow-lg ring-black/10">
+                    <div className="absolute top-1/2 left-1/2 mt-5">
+                        <ul className="flex h-fit flex-col gap-y-3 py-1 mt-3 w-56 rounded-xl md:absolute md:bg-navy md:ring-2 md:shadow-lg">
                             {props.children}
                         </ul>
                     </div>
@@ -98,16 +98,8 @@ export const Dropdown = (props: Dropdownprops) => {
 
 export const NavMenu = (props: Navprops) => {
     return (
-            <div className="flex relative text-lg py-2 h-fit p-1 gap-3 text-xs md:max-w-20 md:display-none">
+            <div className="flex relative text-lg py-2 h-fit p-1 gap-2 text-sm md:max-w-20 md:display-none">
                 {props.children}
             </div>
-    )
-};
-
-export const NavBtnLink = (props: Linkprops) => {
-    return (
-            <Link href="/" className="cursor-pointer">
-                {props.children}
-            </Link>
     )
 };
