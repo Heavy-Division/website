@@ -1,6 +1,6 @@
 import React from 'react';
-import Container from './Container';
-import Button from './Button';
+import Container from '../utils/Container';
+import Button from '../utils/Button';
 import {featuresRef} from "./Features";
 
 const B787Hero = () => {
@@ -22,10 +22,10 @@ const B787Hero = () => {
                 />
                 <Container className="min-h-screen max-w-6xl">
                         <Button className="absolute h-14 w-36 top-3/4 left-1/3 hover:text-blue-sky border-2 p-5">
-                            <a href="">Download</a>
+                            <a href="src/Components/home/B787Hero">Download</a>
                         </Button>
                         <Button onClick={handleClick} className="absolute h-14 w-36 top-3/4 left-2/3 hover:text-blue-sky border-2 p-5">
-                            <a href="">About</a>
+                            <a href="src/Components/home/B787Hero">About</a>
                         </Button>
                 </Container>
             </section>

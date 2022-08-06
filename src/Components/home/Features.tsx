@@ -1,5 +1,5 @@
 import { createRef, forwardRef } from 'react';
-import Container from './Container';
+import Container from '../utils/Container';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 

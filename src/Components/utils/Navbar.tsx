@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
            <Nav>
                    <div className="py-2 px-3">
-                       <Link href="/"><a>
+                       <Link href="/src/pages"><a>
                <Image src={logoUrl} height={50} width={250} draggable={false} objectFit="contain" />
                        </a>
                           </Link>

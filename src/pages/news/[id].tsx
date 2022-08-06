@@ -5,7 +5,7 @@ import { v4 } from 'uuid';
 import * as fs from 'fs';
 import Head from 'next/head';
 import { getAllPostIds, getPostContent, PostContent } from '../../lib/news/posts';
-import Container from '../../Components/Container';
+import Container from '../../Components/utils/Container';
 
 const NOTAMS_EMBED_PREVIEWS_DIR = 'public/img/notams-embed-previews';
 const NOTAMS_EMBED_PREVIEWS_PUBLIC_DIR = 'img/notams-embed-previews';

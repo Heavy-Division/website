@@ -1,4 +1,4 @@
-import Container from './Container';
+import Container from '../utils/Container';
 import Image from 'next/image';
 import React from "react";
 
