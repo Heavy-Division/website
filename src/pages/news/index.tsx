@@ -2,7 +2,7 @@ import { GetStaticProps } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getPostListings, PostListing } from '../../lib/news/posts';
-import Container from '../../Components/utils/Container';
+import Container from '../../components/utils/Container';
 
 export type BlogProps = { listings: PostListing[] }
 

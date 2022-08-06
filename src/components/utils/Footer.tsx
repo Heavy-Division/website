@@ -2,17 +2,18 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Container from './Container';
 
-
 export const FooterIconItem = () => (
-    <a href="src/Components/utils/Footer" target="_blank" rel="noreferrer">
+    <a href="src/components/utils/Footer" target="_blank" rel="noreferrer">
         a
     </a>
 );
 
+// create a scroll listener using a React Hook
+
 const year = new Date().getFullYear();
 
 export const Footer = () => (
-    <footer className="py-8 bg-blue-dark">
+    <footer className="flex justify-center py-8 bg-white text-navy">
         <Container className="flex flex-col space-y-2">
 
             <div className="flex gap-x-4 justify-center">
@@ -22,7 +23,7 @@ export const Footer = () => (
             <div className="flex gap-x-4 justify-center text-center">
                 <a
                     className="hover:underline"
-                    href="src/Components/utils/Footer"
+                    href="src/components/utils/Footer"
                     target="_blank"
                     rel="noreferrer"
                 >
@@ -42,7 +43,7 @@ export const Footer = () => (
 
             <a
                 className="flex justify-center"
-                href="src/Components/utils/Footer?utm_source=flybywiresim&utm_campaign=oss"
+                href="src/components/utils/Footer?utm_source=flybywiresim&utm_campaign=oss"
                 target="_blank"
                 rel="noreferrer"
             >
@@ -51,7 +52,7 @@ export const Footer = () => (
                     <Image src="/svg/vercel.svg" alt="Vercel" width={60} height={20} />
                 </span>
             </a>
-            <em className="text-center text-teal-100">&copy; Heavy Division and its contributors {year}</em>
+            <em className="text-center text-navy">&copy; Heavy Division and its contributors {year}</em>
         </Container>
     </footer>
 );

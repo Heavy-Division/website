@@ -1,7 +1,7 @@
-import B787Hero from '../Components/home/B787Hero';
-import { CustomLNAV, CustomFMGC, CustomPFD } from '../Components/home/Features';
-import { Footer } from '../Components/utils/Footer';
-import { ScrollToTopButton } from '../Components/utils/ScrollToTopButton';
+import B787Hero from '../components/home/B787Hero';
+import { CustomLNAV, CustomFMGC, CustomPFD } from '../components/home/Features';
+import { Footer } from '../components/utils/Footer';
+import { ScrollToTopButton } from '../components/utils/ScrollToTopButton';
 
 const Index = () => (
   <>

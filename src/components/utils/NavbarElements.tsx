@@ -1,6 +1,7 @@
 import { useState, useEffect, ReactNode } from 'react';
 import Link from 'next/link';
 import { IoCaretUpCircleSharp } from 'react-icons/io5';
+import { motion } from 'framer-motion';
 
 type Navprops = {
     className?: string,
@@ -67,7 +68,8 @@ export const NavLink = (props: Linkprops) => {
 };
 
 export const DropdownItem = (props: { children: ReactNode }) => (
-    <li className="flex justify-center py-2 px-3 mx-3 text-gray-200 hover:bg-blue-tailwind rounded-md hover:cursor-pointer transition duraiton-300 md:text-gray-700 md:hover:text-gray-900 md:hover:bg-gray-100">
+
+    <li className="flex justify-center py-2 px-3 mx-3 text-gray-200 hover:ring-2 ring-white rounded-md hover:cursor-pointer transition duration-300 md:text-gray-700 md:hover:text-gray-900 md:hover:bg-gray-100">
         {props.children}
     </li>
 );
@@ -87,7 +89,7 @@ export const Dropdown = (props: Dropdownprops) => {
                 </span>
                 {isOpen && (
                     <div className="absolute top-1/2 left-1/2 mt-5">
-                        <ul className="flex h-fit flex-col gap-y-3 py-1 mt-3 w-56 rounded-xl md:absolute md:bg-navy md:ring-2 md:shadow-lg">
+                        <ul className="flex h-fit flex-col gap-y-3 py-2 mt-3 w-56 rounded-xl md:absolute md:bg-navy md:shadow-lg">
                             {props.children}
                         </ul>
                     </div>
