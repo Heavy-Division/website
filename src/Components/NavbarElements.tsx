@@ -10,6 +10,7 @@ type Navprops = {
 type Linkprops = {
     className?: string,
     children?: ReactNode,
+    url: string,
 };
 
 type Dropdownprops = {
@@ -59,14 +60,14 @@ export const Nav = (props: Navprops) => {
 
 export const NavLink = (props: Linkprops) => {
     return (
-            <Link href="/" className="flex flex-col cursor-pointer transition hover:text-blue-sky">
+            <Link href={props.url} className="flex flex-col cursor-pointer transition hover:text-blue-sky">
                 {props.children}
             </Link>
     )
 };
 
 export const DropdownItem = (props: { children: ReactNode }) => (
-    <li className="flex justify-center py-2 px-3 mx-3 text-gray-200 hover:bg-blue-tailwind rounded-md cursor-pointer transition duraiton-300 md:text-gray-700 md:hover:text-gray-900 md:hover:bg-gray-100">
+    <li className="flex justify-center py-2 px-3 mx-3 text-gray-200 hover:bg-blue-tailwind rounded-md hover:cursor-pointer transition duraiton-300 md:text-gray-700 md:hover:text-gray-900 md:hover:bg-gray-100">
         {props.children}
     </li>
 );

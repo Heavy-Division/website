@@ -23,6 +23,9 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
+      backgroundImage: {
+        'generic': "url('https://github.com/adrianhajdin/project_graphql_blog/blob/main/public/bg.jpg?raw=true')",
+      },
       colors: {
         colors,
         'navy': '#080D19',

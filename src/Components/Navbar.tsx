@@ -2,35 +2,33 @@ import React, { useState } from 'react';
 import { Nav, NavLink, NavMenu, DropdownItem, Dropdown } from './NavbarElements';
 import Container from './Container';
 import Image from 'next/image';
+import Link from "next/link";
 
-const logoUrl = '/hdbanner.svg';
+const logoUrl = '/svg/hdbanner.svg';
 
 const Navbar = () => {
     return (
            <Nav>
                    <div className="py-2 px-3">
+                       <Link href="/"><a>
                <Image src={logoUrl} height={50} width={250} draggable={false} objectFit="contain" />
+                       </a>
+                          </Link>
                    </div>
                <Container className="flex justify-end">
                <span className="p-2">
                    <NavMenu>
                        <div className="flex gap-x-5 mt-4 text-xl">
                        <div className="hover:text-blue-sky transition duration-300">
-                            <NavLink>
-                                News
-                            </NavLink>
+                           <Link href="/news">
+                               <a>News</a>
+                           </Link>
                        </div>
-
                        <div className="hover:text-blue-sky transition duration-300">
-                            <NavLink>
-                                Projects
-                            </NavLink>
+                            <a>Projects</a>
                        </div>
-
                        <div className="hover:text-blue-sky transition duration-300">
-                            <NavLink>
                                 Downloads
-                            </NavLink>
                        </div>
                            <Dropdown className="font-medium" titleName="Community">
                                 <DropdownItem>

@@ -1,6 +1,6 @@
-# ![Heavy Division](https://cdn.discordapp.com/attachments/927293618295824415/977799736922877962/hdgithub_banner.png)
+# ![Heavy Division](https://cdn.discordapp.com/attachments/960729491750141993/983010796189659216/hdgithub_banner.png)
 
-Website for the [Heavy Division mod](https://github.com/Heavy-Division/B78XH) for Microsoft Flight Simulator.
+Marketing website for [Heavy Division](https://github.com/Heavy-Division/B78XH) mods, and other projects.
 
 ## Contributing
 

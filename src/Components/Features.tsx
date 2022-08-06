@@ -7,7 +7,7 @@ export const featuresRef = createRef<HTMLDivElement>();
 
 export const CustomLNAV = forwardRef(() => {
     return (
-        <section id="CustomLNAV" ref={featuresRef} className="h-screen bg-navy overflow-hidden flex justify-center">
+        <section id="CustomLNAV" ref={featuresRef} className="flex justify-center z-10 w-screen h-screen bg-navy overflow-hidden ">
             <Container className="flex flex-col items-center justify-center">
                     <p className="flex justify-center text-5xl p-2">
                     LNAV and VNAV
@@ -21,7 +21,7 @@ export const CustomLNAV = forwardRef(() => {
                     whileInView={{ opacity: 1, x: -100 }}
                     viewport={{ once: true }}
                 >
-                <Image src={'/lnav.svg'} height={250} width={750} draggable={false} objectFit="contain" />
+                <Image src={'/svg/lnav.svg'} height={250} width={750} draggable={false} objectFit="contain" />
                 </motion.div>
                 <motion.div
                     initial = {{ opacity: 0 }}
@@ -29,7 +29,7 @@ export const CustomLNAV = forwardRef(() => {
                     whileInView={{ opacity: 1, x: 100 }}
                     viewport={{ once: true }}
                 >
-                <Image src={'/vnav.svg'} height={250} width={750} draggable={false} objectFit="contain" />
+                <Image src={'/svg/vnav.svg'} height={250} width={750} draggable={false} objectFit="contain" />
                 </motion.div>
             </Container>
         </section>
@@ -39,7 +39,7 @@ export const CustomLNAV = forwardRef(() => {
 
 export const CustomFMGC = () => {
     return (
-        <section id="CustomFMGC" className="h-screen bg-navy overflow-hidden flex justify-center">
+        <section id="CustomFMGC" className="z-30 w-screen h-screen bg-navy overflow-hidden flex justify-center">
             <Container className="flex flex-col items-center justify-center">
                 <motion.div
                     initial = {{ opacity: 0, x: 100 }}
@@ -53,7 +53,7 @@ export const CustomFMGC = () => {
                         <p className="flex justify-center p-5">
                             FMGC rewrite, supporting SimBrief Flight Planning, Co-pilot functionality, and payload management.
                         </p>
-                        <Image src="/CDU.svg" height={500} width={1000}  draggable={false} objectFit="contain"/>
+                        <Image src="/svg/CDU.svg" height={500} width={1000}  draggable={false} objectFit="contain"/>
                 </motion.div>
             </Container>
         </section>
@@ -77,8 +77,8 @@ export const CustomPFD = () => {
                             Fully Rewritten PFD and MFD adding functionality and improving sim performance
                         </p>
                         <span className="grid grid-row-1 grid-cols-2 py-10">
-                    <Image src="/PFD.svg" height={300} width={1000} draggable={false} objectFit="contain"/>
-                        <Image src="/MFD.svg" height={1000} width={1500} draggable={false} objectFit="contain"/>
+                    <Image src="/svg/PFD.svg" height={300} width={1000} draggable={false} objectFit="contain"/>
+                        <Image src="/svg/MFD.svg" height={1000} width={1500} draggable={false} objectFit="contain"/>
                     </span>
                 </motion.div>
             </Container>
