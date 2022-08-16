@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import '../styles/main.scss';
 import type { AppProps } from 'next/app';
-import Navbar from '../components/utils/Navbar';
+import { Navbar } from '../components/utils/Navbar';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 const App = ({ Component, pageProps }: AppProps) => (

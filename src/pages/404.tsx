@@ -1,20 +1,14 @@
+const URL_404 = "https://media.discordapp.net/attachments/429734269838032898/1007065744737050624/404.png.png?width=959&height=682";
 const Custom404 = () => (
-  <section>
-      <div className="fixed top-20 left-30 justify-center mx-auto max-w-md min-h-screen text-center md:max-w-4xl">
-          <h5 className="text-9xl font-bold text-black">404</h5>
-          <h2 className="mt-8 text-4xl font-semibold text-black">
-              Uh oh, our compass seems to broken. The requested URL does not exist.
-          </h2>
-          <h1 className="mt-4 text-xl font-medium text-black">
-              Send a message to us on our 
-               <a href="https://discord.gg/J5WUczcM"> Discord server </a>
-               if you believe this was a mistake.
-          </h1>
-      </div>
-
-      <img className="object-cover absolute top-0 w-screen h-screen opacity-40" src="https://cdn.discordapp.com/attachments/820431837901750282/967120842385412126/unknown.png"></img>
-     
-  </section>
+<section id="404">
+    <div className="flex flex-col justify-center mx-auto text-center min-h-screen">
+        <h3 className="text-8xl font-semibold">404</h3>
+        <h4 className="text-5xl font-medium">Lost your way?</h4>
+        <h4 className="text-3xl font-medium">Sorry, we can&apos;t find that page. Try vectoring back to the home page.</h4>
+        <a href="/" className="text-3xl mt-3 border-gray-light underline cursor-pointer">Back</a>
+    </div>
+    <img src={URL_404} className="absolute top-0 w-screen h-screen object-cover opacity-40 -z-10" alt="404" />
+</section>
 );
 
 export default Custom404;

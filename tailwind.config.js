@@ -23,12 +23,10 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
-      backgroundImage: {
-        'generic': "url('https://github.com/adrianhajdin/project_graphql_blog/blob/main/public/bg.jpg?raw=true')",
-      },
       colors: {
         colors,
-        'navy': '#080D19',
+        'navy': '#000E30',
+        'darqua': '#06131D',
         'light-navy': '#202E4C',
         'purple': '#7e5bef',
         'pink': '#ff49db',
@@ -38,7 +36,7 @@ module.exports = {
         'gray-dark': '#273444',
         'gray': '#8492a6',
         'gray-light': '#d3dce6',
-        'white': '#f4f4f4',
+        'white': '#fafafa',
         'pure-white':'#ffffff',
         'green-contrast': '#4EF07B',
         blue: {
@@ -62,8 +60,8 @@ module.exports = {
       },
       extend: {
         spacing: {
-          '1': '8rem',
-          '2': '12rem',
+          '1': '4.375rem',
+          '2': '8rem',
           '3': '16rem',
           '4': '24rem',
           '5': '32rem',

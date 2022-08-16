@@ -10,10 +10,13 @@
   html {
     font-size: 14px;
     scroll-behavior: smooth;
+    background-image: url('/img/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   body {
-    @apply overflow-x-hidden bg-navy text-white;
+    @apply overflow-x-hidden text-white;
   }
   li {
     @apply text-xl font-semibold

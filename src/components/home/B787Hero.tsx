@@ -1,36 +1,33 @@
-import React from 'react';
-import Container from '../utils/Container';
-import Button from '../utils/Button';
-import {featuresRef} from "./Features";
+import Image from 'next/image';
+import { Container, Button } from '../utils';
 
-const B787Hero = () => {
-    const handleClick = () => {
-        if (featuresRef.current) {
-            featuresRef.current.scrollIntoView({ behavior: 'smooth' });
-        }
 
-    }
-        return (
+export const B787Hero = () => {
+
+    return (
             <section id="B787Hero">
-                <video
-                    className="fixed object-cover fixed w-screen h-screen -z-10 opacity-60"
-                    src="https://media.istockphoto.com/videos/aerial-view-of-london-skyline-hyperlapse-video-id1196816851"
-                    playsInline
-                    autoPlay
-                    muted
-                    loop
-                />
-                <Container className="min-h-screen max-w-6xl">
-                        <Button className="absolute h-14 w-36 top-3/4 left-1/3 hover:text-blue-sky border-2 p-5">
-                            <a href="src/components/home/B787Hero">Download</a>
-                        </Button>
-                        <Button onClick={handleClick} className="absolute h-14 w-36 top-3/4 left-2/3 hover:text-blue-sky border-2 p-5">
-                            <a href="src/components/home/B787Hero">About</a>
-                        </Button>
+                <Container className="max-w-6xl md:max-w-full min-h-screen">
+                <div className="grid grid-col justify-center py-24 gap-y-24">
+                    <Image src={'/svg/b78xh.svg'} height={68} width={350} draggable={false} />
+                    <Image src={'/svg/plane-forward.svg'} height={360} width={1290} draggable={false}/>
+                </div>
+                <div className="flex justify-center">
+                    <p className="md:text-5xl text-3xl font-extrabold">
+                        A new era of&nbsp;
+                        <span className="text-blue-sky">flight&nbsp;</span>
+                        Simulation
+                    </p>
+                </div>
+                <div className="flex justify-center gap-x-6">
+                <Button className="border-2 border-blue-sky w-48 md:w-72 h-18 md:h-24 text-2xl md:text-3xl mt-5 hover:bg-blue-sky">
+                    <a href={"/Downloads"}>Download</a>
+                </Button>
+                    <Button className="border-2 border-blue-sky w-48 md:w-72 h-18 md:h-24 text-2xl md:text-3xl mt-5 hover:bg-blue-sky">
+                        <a href={"/Downloads"}>Learn More</a>
+                    </Button>
+                </div>
                 </Container>
             </section>
     )
 };
-
-export default B787Hero;
 

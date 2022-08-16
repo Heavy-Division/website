@@ -1,87 +1,23 @@
-import { createRef, forwardRef } from 'react';
-import Container from '../utils/Container';
+import { Container } from '../utils';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 
-export const featuresRef = createRef<HTMLDivElement>();
+export const Features = () => {
 
-export const CustomLNAV = forwardRef(() => {
     return (
-        <section id="CustomLNAV" ref={featuresRef} className="flex justify-center z-10 w-screen h-screen bg-navy overflow-hidden ">
-            <Container className="flex flex-col items-center justify-center">
-                    <p className="flex justify-center text-5xl p-2">
-                    LNAV and VNAV
-                    </p>
-                    <p className="flex justify-center p-2">
-                        Auto-pilot improvements including Holds, Direct To, Waypoint Constraints, and Top of Descent.
-                    </p>
-                <motion.div
-                    initial = {{ opacity: 0 }}
-                    transition={{ ease: "easeIn", duration: 1 }}
-                    whileInView={{ opacity: 1, x: -100 }}
-                    viewport={{ once: true }}
-                >
-                <Image src={'/svg/lnav.svg'} height={250} width={750} draggable={false} objectFit="contain" />
-                </motion.div>
-                <motion.div
-                    initial = {{ opacity: 0 }}
-                    transition={{ ease: "easeIn", duration: 1 }}
-                    whileInView={{ opacity: 1, x: 100 }}
-                    viewport={{ once: true }}
-                >
-                <Image src={'/svg/vnav.svg'} height={250} width={750} draggable={false} objectFit="contain" />
-                </motion.div>
+        <section id="Features">
+            <Container className="max-w-6xl md:max-w-full min-h-screen">
+                <div className="flex justify-center py-12">
+                <Image src="/svg/LNAV.svg" height={160} width={790} draggable={false} />
+                </div>
+                <div className="flex justify-between px-24 gap-2">
+                    <p className="w-48 md:w-96 text-2xl md:text-4xl">LNAV and VNAV enhancements to tackle any route.</p>
+                    <Image src="/svg/Hold.svg" height={310} width={265} draggable={false} />
+                </div>
+                <div className="flex justify-center">
+                    <Image src="/svg/VNAV.svg" height={140} width={650} draggable={false} />
+                </div>
             </Container>
         </section>
     )
-}
-);
+};
 
-export const CustomFMGC = () => {
-    return (
-        <section id="CustomFMGC" className="z-30 w-screen h-screen bg-navy overflow-hidden flex justify-center">
-            <Container className="flex flex-col items-center justify-center">
-                <motion.div
-                    initial = {{ opacity: 0, x: 100 }}
-                    transition={{ ease: "easeIn", duration: 2 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                 >
-                        <p className="flex justify-center text-5xl">
-                        FMGC
-                        </p>
-                        <p className="flex justify-center p-5">
-                            FMGC rewrite, supporting SimBrief Flight Planning, Co-pilot functionality, and payload management.
-                        </p>
-                        <Image src="/svg/CDU.svg" height={500} width={1000}  draggable={false} objectFit="contain"/>
-                </motion.div>
-            </Container>
-        </section>
-    )
-}
-
-export const CustomPFD = () => {
-    return (
-        <section id="CustomPFDMFD" className="h-screen bg-navy overflow-hidden flex justify-center">
-            <Container className="flex flex-col items-center justify-center">
-                <motion.div
-                    initial = {{ opacity: 0, x: -100 }}
-                    transition={{ ease: "easeIn", duration: 2 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                >
-                        <p className="flex justify-center text-5xl">
-                        PFD & MFD
-                        </p>
-                        <p className="flex justify-center">
-                            Fully Rewritten PFD and MFD adding functionality and improving sim performance
-                        </p>
-                        <span className="grid grid-row-1 grid-cols-2 py-10">
-                    <Image src="/svg/PFD.svg" height={300} width={1000} draggable={false} objectFit="contain"/>
-                        <Image src="/svg/MFD.svg" height={1000} width={1500} draggable={false} objectFit="contain"/>
-                    </span>
-                </motion.div>
-            </Container>
-        </section>
-    )
-}
