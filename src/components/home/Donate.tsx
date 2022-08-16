@@ -1,22 +1,30 @@
+import { useState } from 'react';
 import Image from 'next/image';
 import { Button, Container } from '../utils';
 
+
 export const Donate = () => {
+    const [isShown, setIsShown] = useState(false);
+    console.log(setIsShown);
     return (
         <section id="Donate">
-            <Container className="max-w-6xl min-h-screen">
-                <div className="md:grid flex flex-wrap overflow-hidden md:grid-cols-2 md:grid-rows-2 grid-rows-3 md:gap-24 gap-12 w-screen px-24">
-                    <div className="box row-start-1 row-span-2 col-start-1 col-span-1">
-                        <h1 className="flex font-semibold md:col-start-1 md:px-24 justify-center text-6xl">Donate</h1>
-                        <Image src="/img/Donate_image.png" height={400} width={400} draggable={false} />
+            <Container className="max-w-full min-h-screen py-24">
+                <div className="px-5 md:px-24">
+                    <div className="flex flex-wrap justify-between w-full -mx-px overflow-hidden md:-mx-4">
+                        <div className="my-px px-px overflow-hidden md:my-4 md:px-4 md:w-1/4 lg:w-1/4 xl:w-1/4">
+                            <h1>Donate</h1>
+                            <p>Contributions enable us to sustain and grow the project through operating expenses such as hosting and serving downloads. </p>
+                            <p className="my-12">We use Open Collective to make all donations and expenses transparent, which means you can see exactly how we utilize donated funds anytime.</p>
+                        </div>
+                        <div className="my-px px-px w-full overflow-hidden md:my-4 md:px-4 md:w-1/2 lg:w-1/2 xl:w-1/2">
+                            <Image src="/img/donate.png" height={300} width={300} objectFit={"contain"} draggable={false} layout={"responsive"} />
+                        </div>
                     </div>
-                    <div className="box row-start-1 col-span-2">
-                        <p className="py-7">Contributions enable us to sustain and grow the project through operating expenses such as hosting and serving downloads.</p>
-                        <p>We use Open Collective to make all donations and expenses transparent, which means you can see exactly how we utilize donated funds anytime.</p>
-                    </div>
-                    <div className="box col-span-2">
-                        <Button className="bg-blue-tailwind w-48 h-12 p-5 text-2xl hover:bg-blue-sky mb-4">Donate</Button>
-                        <p className="text-sm">*No profit is generated from donations. Donating does not guarantee access to additional content nor its exclusivity if such content is ever given.</p>
+                    <div className="flex justify-center">
+                    <Button onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}
+                            className="bg-blue-tailwind h-16 w-48 p-4 my-24 hover:bg-blue-sky text-2xl">
+                        <a href="https://opencollective.com/heavy-division-simulations/donate">Donate</a>
+                    </Button>
                     </div>
                 </div>
             </Container>
