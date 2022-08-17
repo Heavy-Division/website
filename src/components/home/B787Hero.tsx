@@ -20,10 +20,10 @@ export const B787Hero = () => {
                 </div>
                 <div className="flex justify-center gap-x-6">
                 <Button className="border-2 border-blue-sky w-48 md:w-72 h-18 md:h-24 text-2xl md:text-3xl mt-5 hover:bg-blue-sky">
-                    <a href={"/Downloads"}>Download</a>
+                    <a href={"/downloads"}>Download</a>
                 </Button>
                     <Button className="border-2 border-blue-sky w-48 md:w-72 h-18 md:h-24 text-2xl md:text-3xl mt-5 hover:bg-blue-sky">
-                        <a href={"/Downloads"}>Learn More</a>
+                        <a href={"#Features"}>Learn More</a>
                     </Button>
                 </div>
                 </Container>

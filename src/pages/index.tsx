@@ -6,7 +6,6 @@ const Index = () => (
       <B787Hero />
       <Features />
       <Donate />
-      <Footer />
   </>
 );
 

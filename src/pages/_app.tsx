@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import '../styles/main.scss';
 import type { AppProps } from 'next/app';
-import { Navbar } from '../components/utils/Navbar';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { Navbar } from '../components/utils';
+import {Footer} from '../components/utils';
 
 const App = ({ Component, pageProps }: AppProps) => (
 
@@ -39,6 +39,7 @@ const App = ({ Component, pageProps }: AppProps) => (
       </Head>
         <Navbar />
       <Component {...pageProps} />
+        <Footer />
     </div>
 );
 
