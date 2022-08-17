@@ -5,7 +5,7 @@ import { Button, Container } from '../utils';
 
 export const Donate = () => {
     const [isShown, setIsShown] = useState(false);
-    console.log(setIsShown);
+
     return (
         <section id="Donate">
             <Container className="max-w-full min-h-screen py-24">

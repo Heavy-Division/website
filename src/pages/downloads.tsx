@@ -29,7 +29,7 @@ const Downloads = () => {
                     <Image src={'/svg/b78xh.svg'} height={68} width={350} draggable={false} />
                 </div>
                 <div className="flex justify-center">
-                    <div className="flex flex-wrap -mx-4 overflow-hidden sm:-mx-3 md:-mx-3 lg:-mx-1 xl:-mx-6">
+                    <div className="flex flex-wrap -mx-3 overflow-hidden sm:-mx-4 md:-mx-3 lg:-mx-5 xl:-mx-6">
                             <DownloadItem description={stableSummary}>Stable</DownloadItem>
                             <DownloadItem description={developmentSummary}>Development</DownloadItem>
                             <DownloadItem description={experimentalSummary}>Experimental</DownloadItem>

@@ -9,9 +9,9 @@ export const Features = () => {
                 <div className="flex justify-center py-12">
                 <Image src="/svg/LNAV.svg" height={160} width={790} draggable={false} />
                 </div>
-                <div className="flex justify-between px-24 gap-2">
-                    <p className="w-48 md:w-96 text-2xl md:text-4xl">LNAV and VNAV enhancements to tackle any route.</p>
-                    <Image src="/svg/Hold.svg" height={310} width={265} draggable={false} />
+                <div className="flex justify-between gap-12">
+                    <p className="w-72 md:w-96 text-2xl md:text-3xl px-10 md:px-24">LNAV and VNAV enhancements to tackle any route.</p>
+                    <Image src="/svg/Hold.svg" height={400} width={265} draggable={false} objectFit={"contain"} className="px-24"/>
                 </div>
                 <div className="flex justify-center">
                     <Image src="/svg/VNAV.svg" height={140} width={650} draggable={false} />
