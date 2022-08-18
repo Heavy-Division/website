@@ -68,7 +68,7 @@ export const MobileNav = () => {
          <nav>
              {isOpen && (
                  <Menu>
-                     <ul className="fixed left-1/4 pt-32">
+                     <ul onClick={() => setOpen(!isOpen)} className="fixed left-1/4 pt-32">
                          <NavLink href={"/news"}>News</NavLink>
                          <NavLink href={"/"}>Projects</NavLink>
                          <NavLink href={"/downloads"}>Downloads</NavLink>
