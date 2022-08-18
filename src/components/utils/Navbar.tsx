@@ -83,7 +83,7 @@ export const Navbar = () => {
                 </Link>
             </div>
             <div className="w-screen">
-            <nav className="fixed h-14 invisible sm:visible bg-gradient z-20 w-screen">
+            <nav className="fixed h-14 invisible sm:visible bg-gradient shadow-md z-20 w-screen">
                 <div className="flex w-full justify-center gap-x-10 pt-4">
                     <NavItem href={"/downloads"}>Downloads</NavItem>
                     <NavItem href={"/news"}>News</NavItem>
