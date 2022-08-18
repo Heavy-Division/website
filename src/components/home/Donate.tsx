@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { Button, Container } from '../utils';
+import Link from 'next/link';
 
 
 export const Donate = () => {
@@ -23,7 +24,7 @@ export const Donate = () => {
                     <div className="flex justify-center">
                     <Button onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}
                             className="bg-blue-tailwind h-16 w-48 p-4 my-24 hover:bg-blue-sky text-2xl">
-                        <a href="https://opencollective.com/heavy-division-simulations/donate">Donate</a>
+                        <Link href="https://opencollective.com/heavy-division-simulations/donate">Donate</Link>
                     </Button>
                     </div>
                 </div>

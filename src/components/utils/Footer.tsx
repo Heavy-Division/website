@@ -2,14 +2,10 @@ import { ReactNode } from 'react';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { faDiscord, faGithub, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';;
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
 
 type IconItemProp = {
     icon: IconProp,
-    href?: string
-}
-
-type linkProp = {
-    children: ReactNode,
     href?: string
 }
 
@@ -19,25 +15,30 @@ export const FooterIconItem = (props: IconItemProp) => (
     </a>
 );
 
-export const ItemLink = (props: linkProp) => (
-  <a href={props.href} target="_blank" rel="noreferrer" className="hover:underline hover:text-blue-sky">{props.children}</a>
-);
-
 export const Footer = () => {
+    const year = new Date().getFullYear();
    return (
         <footer>
-                <div className="flex flex-col-4 justify-center gap-x-6 md:gap-x-4 text-5xl">
+                <div className="flex flex-col-4 justify-center gap-x-6 md:gap-x-4 text-4xl">
                     <FooterIconItem icon={faGithub} href="https://github.com/Heavy-Division" />
                     <FooterIconItem icon={faDiscord} href="https://discord.gg/ZtbHT7jkMW" />
                     <FooterIconItem icon={faTwitter} href="https://twitter.com/heavydivsim" />
                     <FooterIconItem icon={faYoutube} href="https://discord.gg/ZtbHT7jkMW" />
                 </div>
                 <div className="flex flex-col-3 justify-center gap-x-4">
-                    <ItemLink href={"/"}>Source Code</ItemLink>
-                    <ItemLink href={"/"}>Terms of Service</ItemLink>
-                    <ItemLink href={"/privacy"}>Privacy Policy</ItemLink>
+                    <span className="hover:underline cursor-pointer hover:text-blue-sky">
+                        <Link href={"/"}>Source Code</Link>
+                    </span>
+
+                    <span className="hover:underline cursor-pointer hover:text-blue-sky">
+                    <Link href={"/"}>Terms of Service</Link>
+                    </span>
+
+                    <span className="hover:underline cursor-pointer hover:text-blue-sky">
+                    <Link href={"/privacy"}>Privacy Policy</Link>
+                    </span>
                 </div>
-            <p className="flex justify-center my-5 text-sm">© Heavy Division and its contributors 2020-2022</p>
+            <p className="flex justify-center my-5 text-sm">© Heavy Division and its contributors 2020-{year}</p>
         </footer>
     );
 }

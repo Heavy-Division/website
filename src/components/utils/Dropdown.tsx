@@ -12,7 +12,7 @@ type DropDownItemProps = {
 }
 
 export const DropDownItem = (props: DropDownItemProps) => (
-    <p className="hover:text-blue-sky text-lg hover:bg-slate-200 px-1">
+    <p className="hover:text-blue-sky text-sm hover:bg-slate-200 px-2">
     <Link href={props.href}>{props.children}</Link>
     </p>
 )
@@ -23,22 +23,28 @@ export const Dropdown = (props: DropDownProps) => {
         <div>
             <p onMouseEnter={() => setIsShown(true)}
                onMouseLeave={() => setIsShown(false)}
-                className="flex font-semibold text-xl hover:text-blue-sky cursor-pointer pb-1">
-                {props.children}
-                <FaChevronLeft className={`mt-[5px] ml-2 text-blue-sky ${isShown && '-rotate-90 transition'} ${!isShown && 'transition'}`}/>
+                className="flex text-sm hover:text-blue-sky cursor-pointer">
+                <span
+                    draggable="false"
+                    onClick={() => setIsShown(!isShown)}
+                    className="inline-flex font-semibold">
+                           {props.children}
+                    <FaChevronLeft className={`mt-[4px] ml-1 text-blue-sky z-40 ${isShown && '-rotate-90 transition'} ${!isShown && 'transition'}`}/>
+                </span>
             </p>
-            {isShown && (
             <div onMouseEnter={() => setIsShown(true)}
-                onMouseLeave={() => setIsShown(false)}
-                className="absolute bg-white w-32 h-fit rounded-sm z-10 py-1">
-                <ul className="flex flex-col gap-y-2 text-navy font-semibold">
-                    <DropDownItem href={"/"}>Discord</DropDownItem>
-                    <DropDownItem href={"/"}>Twitter</DropDownItem>
-                    <DropDownItem href={"/"}>YouTube</DropDownItem>
-                    <DropDownItem href={"/"}>Donate</DropDownItem>
-                </ul>
+                 onMouseLeave={() => setIsShown(false)}>
+            {isShown && (
+            <div className="fixed py-2 bg-white w-24 rounded-md">
+                <ol className="flex flex-col gap-y-2 text-navy font-semibold">
+                    <DropDownItem href={"https://discord.gg/ZtbHT7jkMW"}>Discord</DropDownItem>
+                    <DropDownItem href={"https://mobile.twitter.com/heavydivsim"}>Twitter</DropDownItem>
+                    <DropDownItem href={"https://www.youtube.com/channel/UCPqKuCF7oosgDfUn6jmYdgw"}>YouTube</DropDownItem>
+                    <DropDownItem href={"https://opencollective.com/heavy-division-simulations/donate"}>Donate</DropDownItem>
+                </ol>
             </div>
                 )}
+            </div>
         </div>
     )
 }

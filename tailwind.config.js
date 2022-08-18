@@ -23,6 +23,9 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
+      backgroundImage: {
+        'gradient': "url('/img/bg.png')"
+      },
       colors: {
         colors,
         'navy': '#000E30',

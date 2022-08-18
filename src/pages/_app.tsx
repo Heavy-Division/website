@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import '../styles/main.scss';
 import type { AppProps } from 'next/app';
-import { Navbar } from '../components/utils';
-import {Footer} from '../components/utils';
+import { Navbar, ScrollToTopButton } from '../components/utils';
+import { Footer } from '../components/utils';
 
 const App = ({ Component, pageProps }: AppProps) => (
 
@@ -39,6 +39,7 @@ const App = ({ Component, pageProps }: AppProps) => (
       </Head>
         <Navbar />
       <Component {...pageProps} />
+        <ScrollToTopButton />
         <Footer />
     </div>
 );

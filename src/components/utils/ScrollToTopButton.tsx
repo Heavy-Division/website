@@ -19,7 +19,7 @@ export const ScrollToTopButton = () => {
     return (
         <>
             {visible && (
-                <IoCaretUpCircle type="button" onClick={handleClick} className="fixed right-0 bottom-0 h-10 w-10 z-50 text-blue-sky m-8 rounded-xl cursor-pointer transition duration-300 hover:-translate-y-1 focus:outline-none" />
+                <IoCaretUpCircle type="button" onClick={handleClick} className="fixed right-0 bottom-0 h-10 w-24 z-50 text-blue-sky text-xl my-10 mx-1 cursor-pointer" />
             )}
         </>
     );
