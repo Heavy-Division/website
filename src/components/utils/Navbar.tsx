@@ -46,7 +46,9 @@ export const MobileNav = () => {
      <div>
          <span className={`fixed bg-gradient shadow-xl w-screen h-20 z-10 sm:invisible ${isOpen && 'invisible'}`}>
              <div className="flex justify-center">
-            <Image src="/svg/logo.svg" width={40} height={70} objectFit={"contain"} />
+                 <Link href={"/"}>
+                    <Image src="/svg/logo.svg" width={40} height={70} objectFit={"contain"} />
+                 </Link>
             </div>
          </span>
          <div className="visible sm:invisible">
