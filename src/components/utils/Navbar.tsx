@@ -15,7 +15,7 @@ type navItemProps = {
 }
 
 export const NavItem = (props: navItemProps) => (
-    <div className="hover:text-blue-sky font-semibold text-sm transition">
+    <div className="hover:text-blue-sky font-semibold text-lg transition">
     <a href={props.href} className={props.className}>{props.children}</a>
     </div>
 )
@@ -67,9 +67,9 @@ export const MobileNav = () => {
              {isOpen && (
                  <Menu>
                      <ul className="fixed left-1/4 pt-32">
-                         <NavLink href={"/"}>News</NavLink>
+                         <NavLink href={"/news"}>News</NavLink>
                          <NavLink href={"/"}>Projects</NavLink>
-                         <NavLink href={"/"}>Downloads</NavLink>
+                         <NavLink href={"/downloads"}>Downloads</NavLink>
                          <NavLink href={"/"}>Community</NavLink>
                      </ul>
                  </Menu>
@@ -85,7 +85,7 @@ export const Navbar = () => {
         <div>
             <div className="invisible sm:visible fixed z-40 px-16 pt-1">
                 <Link href={"/"}>
-                    <Image src={"/svg/hdbanner.svg"} width={120} height={40} className="cursor-pointer" />
+                    <Image src={"/svg/hdbanner.svg"} width={200} height={50} className="cursor-pointer" />
                 </Link>
             </div>
             <div className="w-screen">

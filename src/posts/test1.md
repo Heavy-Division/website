@@ -2,8 +2,8 @@
 title: 'Heavy Division: Full Steam Ahead'
 date: '2021-05-12'
 authors:
-  - 'Yoshi'
-  - 'Comi'
+   - 'Yoshi'
+   - 'Comi'
 category: 'Announcements'
 metaImage: '/img/landing.png'
 metaAlt: 'Heavy Division Simulations'
@@ -11,7 +11,7 @@ metaAlt: 'Heavy Division Simulations'
 
 ## What are Heavy Division Simulations NOTAMs?
 
-Short for "Notice to Airmen", some of you may wonder what to expect from our NOTAMs. Originally our NOTAMs were delivered using graphics to share our progress, feature images, and other relevant news regarding the A32NX on our social media. With the launch of our new website, we are glad to announce the return of the Heavy Division Simulations NOTAMs. Every NOTAM will be released whenever there is news to share and will contain the latest information and whatever is on our minds to keep you up-to-date. We'll announce each new NOTAM through our social media platforms and Discord channels so that you never miss out.
+Short for "Notice to Airmen", some of you may wonder what to expect from our NOTAMs. Originally our NOTAMs were delivered using graphics to share our progress, feature images, and other relevant news regarding the B78XH on our social media. With the launch of our new website, we are glad to announce the return of the Heavy Division Simulations NOTAMs. Every NOTAM will be released whenever there is news to share and will contain the latest information and whatever is on our minds to keep you up-to-date. We'll announce each new NOTAM through our social media platforms and Discord channels so that you never miss out.
 
 ### Below you'll find a short list of content we plan on introducing:
 
@@ -28,7 +28,7 @@ We aim to keep the structures of each NOTAM similar so that you can easily find 
 
 ### Development Updates
 
-As the A32NX project matures we have started to include more realistic features every day such as the latest flight model and custom autopilot, and we hope everyone is enjoying it so far. We regularly try to keep our community updated through our social media and Discord. However, other platforms limit how much content we can provide at one time and truly express what we want to deliver to our community.
+As the B78XH project matures we have started to include more realistic features every day such as the latest flight model and custom autopilot, and we hope everyone is enjoying it so far. We regularly try to keep our community updated through our social media and Discord. However, other platforms limit how much content we can provide at one time and truly express what we want to deliver to our community.
 
 Ideally in this type of post you would see a short changelog of what we have recently included into our production branches. You can expect to see more updates regarding the development, and our stable branches on a regular basis, and we will expand upon certain more complex updates to either branch to showcase highlighted achievements and how it works.
 
@@ -42,7 +42,7 @@ Featured videos will include our latest uploads, or our partners to showcase new
 
 ### General Information
 
-This section will always be included in each NOTAM, and it will include links for our users to find us on our social media, information on where to get support, our known / reported issues, and a link to download the A32NX.
+This section will always be included in each NOTAM, and it will include links for our users to find us on our social media, information on where to get support, our known / reported issues, and a link to download the B78XH.
 
 ***
 

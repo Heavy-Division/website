@@ -38,7 +38,7 @@ export const Footer = () => {
                     <Link href={"/privacy"}>Privacy Policy</Link>
                     </span>
                 </div>
-            <p className="flex justify-center my-5 text-sm px-3">© Heavy Division and its contributors 2020-{year}</p>
+            <p className="flex justify-center my-4 text-sm px-3">© Heavy Division and its contributors 2020-{year}</p>
         </footer>
     );
 }

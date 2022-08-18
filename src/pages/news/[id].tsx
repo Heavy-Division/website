@@ -5,7 +5,7 @@ import { v4 } from 'uuid';
 import * as fs from 'fs';
 import Head from 'next/head';
 import { getAllPostIds, getPostContent, PostContent } from '../../lib/news/posts';
-import Container from '../../components/utils/Container';
+import { Container } from '../../components/utils/';
 
 const NOTAMS_EMBED_PREVIEWS_DIR = 'public/img/notams-embed-previews';
 const NOTAMS_EMBED_PREVIEWS_PUBLIC_DIR = 'img/notams-embed-previews';
@@ -18,24 +18,24 @@ const Post = ({ content: { authors, category, contentHtml, date, readingStats, t
             <title>
                 {title}
                 {' '}
-                - FlyByWire Simulations
+                - Heavy Division Simulations
             </title>
 
             <meta name="twitter:card" content="summary_large_image" />
 
             <meta key="og:type" name="og:type" content="object" />
-            <meta key="og:site_name" name="og:site_name" content="FlyByWire Simulations" />
+            <meta key="og:site_name" name="og:site_name" content="Heavy Division Simulations" />
             <meta key="og:title" name="og:title" content={title} />
-            <meta key="og:description" name="og:description" content="A NOTAM on the FlyByWire Simulations website" />
-            <meta key="og:image" name="og:image" content={`https://flybywiresim.com/${embedPreviewPath}`} />
-            <meta key="og:image:alt" name="og:image:alt" content={`${title} - FlyByWire Simulations`} />
+            <meta key="og:description" name="og:description" content="A NOTAM on the Heavy Division Simulations website" />
+            <meta key="og:image" name="og:image" content={`https://hdsimulations.com/${embedPreviewPath}`} />
+            <meta key="og:image:alt" name="og:image:alt" content={`${title} - Heavy Division Simulations`} />
             <meta key="og:image:width" name="og:image:width" content="1200" />
             <meta key="og:image:height" name="og:image:height" content="600" />
             <meta name="twitter:image" content={embedPreviewPath} />
         </Head>
 
-        <section className="bg-white">
-            <div className="relative bg-blue-dark">
+        <section className="bg-white text-slate-900">
+            <div className="relative bg-navy">
                 <div className="absolute w-full h-full opacity-20 blur-sm">
                     <Image
                         layout="fill"
@@ -50,10 +50,10 @@ const Post = ({ content: { authors, category, contentHtml, date, readingStats, t
                     <div className="flex text-xl">
                         {category === 'ANNOUNCEMENTS'
                             ? (
-                                <p className="font-black text-teal-light">{category}</p>
+                                <p className="font-black text-blue-sky">{category}</p>
                             )
                             : (
-                                <p className="font-black text-orangutanOrange">{category}</p>
+                                <p className="font-black text-amber-300">{category}</p>
                             )}
                         <span className="pl-2 text-gray-300">
                             {readingStats.text}
@@ -61,11 +61,11 @@ const Post = ({ content: { authors, category, contentHtml, date, readingStats, t
                     </div>
 
                     <h1>{title}</h1>
-                    <p className="font-semibold text-gray-200">
+                    <p className="font-semibold text-slate-100">
                         {'Written by '}
                         {authors.join(', ')}
                     </p>
-                    <p className="text-gray-300">
+                    <p className="text-slate-100">
                         {'Posted: '}
                         {`${date.substring(0, 4)}/${date.substring(5, 7)}/${date.substring(8)}`}
                     </p>
@@ -103,7 +103,7 @@ export const getStaticProps: GetStaticProps<PostProps> = async ({ params }) => {
         const base64Image = Buffer.from(metaImageData).toString('base64');
         const dataURI = `data:image/jpeg;base64,${base64Image}`;
 
-        const html = fs.readFileSync('src/lib/notams/preview.html').toString();
+        const html = fs.readFileSync('src/lib/news/preview.html').toString();
 
         const previewFileName = `${v4()}.png`;
 

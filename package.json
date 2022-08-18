@@ -64,6 +64,7 @@
   "devDependencies": {
     "@graphql-codegen/typescript-graphql-request": "^4.5.2",
     "@heavy-division/eslint-config": "^0.1.0",
+    "@tailwindcss/typography": "^0.5.4",
     "@types/react": "^18.0.15",
     "@types/styled-components": "^5.1.25",
     "@types/uuid": "^8.3.4",

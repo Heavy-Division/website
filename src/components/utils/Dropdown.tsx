@@ -12,7 +12,7 @@ type DropDownItemProps = {
 }
 
 export const DropDownItem = (props: DropDownItemProps) => (
-    <p className="hover:text-blue-sky text-sm hover:bg-slate-200 px-2 transition">
+    <p className="hover:text-blue-sky text-lg hover:bg-slate-200 px-2 transition">
     <Link href={props.href}>{props.children}</Link>
     </p>
 )
@@ -23,7 +23,7 @@ export const Dropdown = (props: DropDownProps) => {
         <div>
             <p onMouseEnter={() => setIsShown(true)}
                onMouseLeave={() => setIsShown(false)}
-                className="flex text-sm hover:text-blue-sky cursor-pointer transition">
+                className="flex text-lg hover:text-blue-sky cursor-pointer transition">
                 <span
                     draggable="false"
                     onClick={() => setIsShown(!isShown)}
@@ -36,7 +36,7 @@ export const Dropdown = (props: DropDownProps) => {
                 onMouseEnter={() => setIsShown(true)}
                  onMouseLeave={() => setIsShown(false)}>
             {isShown && (
-            <div className="fixed mt-3 py-2 bg-white w-24 rounded-md">
+            <div className="fixed mt-3 py-2 bg-white w-36 rounded-md">
                 <ol className="flex flex-col gap-y-2 text-navy font-semibold">
                     <DropDownItem href={"https://discord.gg/ZtbHT7jkMW"}>Discord</DropDownItem>
                     <DropDownItem href={"https://mobile.twitter.com/heavydivsim"}>Twitter</DropDownItem>
