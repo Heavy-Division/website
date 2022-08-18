@@ -11,10 +11,10 @@ export const Menu = (props: menuProps) => (
         animate={{ opacity: 100 }}
         transition={{ duration: 2 }}
     >
-        <div className="fixed top-0 bottom-0 right-0 w-3/4 -mr-12 bg-white z-20 bg-opacity-10 backdrop-blur-xl">
+        <div className="fixed top-0 w-screen h-screen bg-gradient z-20">
             <motion.div
-            initial={{ x: 30}}
-                animate={{ x: 0}}
+            initial={{ x: 30 }}
+                animate={{ x: 0 }}
                 transition={{ duration: 0.5 }}
             >
             {props.children}

@@ -43,32 +43,38 @@ export const MobileNav = () => {
         }
     }
     return (
-     <div className="visible sm:invisible">
-         <div>
+     <div>
+         <span className={`fixed bg-gradient shadow-xl w-screen h-20 z-10 sm:invisible ${isOpen && 'invisible'}`}>
+             <div className="flex justify-center">
+            <Image src="/svg/logo.svg" width={40} height={70} objectFit={"contain"} />
+            </div>
+         </span>
+         <div className="visible sm:invisible">
              <MenuButton
                  isOpen={isOpen}
                  // @ts-ignore
                  onClick={() => setOpen(!isOpen)}
-                 strokeWidth="4"
+                 strokeWidth="3"
                  color="#fafafa"
                  transition={{ ease: "easeOut", duration: 0.2 }}
-                 width="48"
-                 height="24"
-                 className="fixed top-8 right-4 z-40"
+                 width="32"
+                 height="16"
+                 className="fixed top-8 left-8 z-40 cursor-pointer"
              />
-             <nav>
-                 {isOpen && (
-                     <Menu>
-                         <ul className="p-12">
-                            <NavLink href={"/"}>News</NavLink>
-                             <NavLink href={"/"}>Projects</NavLink>
-                             <NavLink href={"/"}>Downloads</NavLink>
-                             <NavLink href={"/"}>Community</NavLink>
-                         </ul>
-                     </Menu>
-                 )}
-             </nav>
          </div>
+
+         <nav>
+             {isOpen && (
+                 <Menu>
+                     <ul className="fixed left-1/4 pt-32">
+                         <NavLink href={"/"}>News</NavLink>
+                         <NavLink href={"/"}>Projects</NavLink>
+                         <NavLink href={"/"}>Downloads</NavLink>
+                         <NavLink href={"/"}>Community</NavLink>
+                     </ul>
+                 </Menu>
+             )}
+         </nav>
      </div>
     )
 }
@@ -77,14 +83,14 @@ export const Navbar = () => {
     const [isShown, setIsShown] = useState(false);
     return (
         <div>
-            <div className="invisible md:visible fixed z-40 cursor-pointer px-24 pt-1">
+            <div className="invisible sm:visible fixed z-40 px-16 pt-1">
                 <Link href={"/"}>
-                    <Image src={"/svg/hdbanner.svg"} width={150} height={40} />
+                    <Image src={"/svg/hdbanner.svg"} width={120} height={40} className="cursor-pointer" />
                 </Link>
             </div>
             <div className="w-screen">
             <nav className="fixed h-14 invisible sm:visible bg-gradient shadow-md z-20 w-screen">
-                <div className="flex w-full justify-center gap-x-10 pt-4">
+                <div className="flex w-full justify-center gap-x-4 md:gap-x-10 pt-4">
                     <NavItem href={"/downloads"}>Downloads</NavItem>
                     <NavItem href={"/news"}>News</NavItem>
                     <NavItem href={"/projects"}>Projects</NavItem>
