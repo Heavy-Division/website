@@ -44,14 +44,14 @@ export const MobileNav = () => {
     }
     return (
      <div>
-         <span className={`fixed bg-gradient shadow-xl w-screen h-20 z-10 sm:invisible ${isOpen && 'invisible'}`}>
+         <span className={`fixed bg-gradient shadow-xl w-screen h-20 z-10 md:invisible ${isOpen && 'invisible'}`}>
              <div className="flex justify-center">
                  <Link href={"/"}>
                     <Image src="/svg/logo.svg" width={40} height={70} objectFit={"contain"} />
                  </Link>
             </div>
          </span>
-         <div className="visible sm:invisible">
+         <div className="visible md:invisible">
              <MenuButton
                  isOpen={isOpen}
                  // @ts-ignore
@@ -85,14 +85,14 @@ export const Navbar = () => {
     const [isShown, setIsShown] = useState(false);
     return (
         <div>
-            <div className="invisible sm:visible fixed z-40 px-16 pt-1">
+            <div className="invisible md:visible fixed z-40 px-16 pt-[12px]">
                 <Link href={"/"}>
-                    <Image src={"/svg/hdbanner.svg"} width={200} height={50} className="cursor-pointer" />
+                    <Image src={"/svg/logo.svg"} width={150} height={45} className="cursor-pointer" />
                 </Link>
             </div>
             <div className="w-screen">
-            <nav className="fixed h-14 invisible sm:visible bg-gradient shadow-md z-20 w-screen">
-                <div className="flex w-full justify-center gap-x-4 md:gap-x-10 pt-4">
+            <nav className="fixed h-20 invisible md:visible bg-gradient shadow-md z-20 w-screen">
+                <div className="flex w-full justify-center gap-x-2 md:gap-x-8 pt-7">
                     <NavItem href={"/downloads"}>Downloads</NavItem>
                     <NavItem href={"/news"}>News</NavItem>
                     <NavItem href={"/projects"}>Projects</NavItem>
