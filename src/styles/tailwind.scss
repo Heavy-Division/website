@@ -18,9 +18,7 @@
   body {
     @apply overflow-x-hidden text-white;
   }
-  li {
-    @apply text-xl font-semibold
-  }
+
   h1,h2,h3,h4 {
     @apply font-extrabold mb-3
   }
@@ -35,9 +33,6 @@
   }
   h4 {
     @apply text-2xl
-  }
-  p {
-    @apply text-xl
   }
 
   iframe {

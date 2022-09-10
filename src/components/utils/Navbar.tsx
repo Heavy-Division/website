@@ -1,24 +1,10 @@
-import {ReactNode, useEffect, useRef, useState} from 'react';
+import { useEffect, useState} from 'react';
 import { Dropdown } from './Dropdown';
 import { MenuButton } from './MenuButton';
-import { NavLink } from './NavLink';
+import { NavLink, MobileNavLink } from './NavLink';
 import { Menu } from "./Menu";
 import Image from 'next/image';
 import Link from "next/link";
-
-
-
-type navItemProps = {
-    children: ReactNode,
-    href?: string
-    className?: string
-}
-
-export const NavItem = (props: navItemProps) => (
-    <div className="hover:text-blue-sky font-semibold text-lg transition">
-    <a href={props.href} className={props.className}>{props.children}</a>
-    </div>
-)
 
 export const MobileNav = () => {
     useEffect(() => {
@@ -44,10 +30,10 @@ export const MobileNav = () => {
     }
     return (
      <div>
-         <span className={`fixed bg-gradient shadow-xl w-screen h-20 z-10 md:invisible ${isOpen && 'invisible'}`}>
-             <div className="flex justify-center">
+         <span className={`fixed shadow-xl w-screen h-2 z-10 md:invisible ${isOpen && 'invisible'}`}>
+             <div className="flex justify-center mt-3">
                  <Link href={"/"}>
-                    <Image src="/svg/logo.svg" width={40} height={70} objectFit={"contain"} />
+                    <Image src="/svg/logo.svg" width={50} height={50} objectFit={"contain"} className="cursor-pointer"/>
                  </Link>
             </div>
          </span>
@@ -68,12 +54,8 @@ export const MobileNav = () => {
          <nav>
              {isOpen && (
                  <Menu>
-                     <ul onClick={() => setOpen(!isOpen)} className="fixed left-1/4 pt-32">
-                         <NavLink href={"/news"}>News</NavLink>
-                         <NavLink href={"/"}>Projects</NavLink>
-                         <NavLink href={"/downloads"}>Downloads</NavLink>
-                         <NavLink href={"/"}>Community</NavLink>
-                     </ul>
+                     <div onClick={() => setOpen(!isOpen)} className="relative left-1/4 mt-32 text-3xl">
+                     </div>
                  </Menu>
              )}
          </nav>
@@ -82,25 +64,33 @@ export const MobileNav = () => {
 }
 
 export const Navbar = () => {
-    const [isShown, setIsShown] = useState(false);
+    const [scroll, setScroll] = useState(false);
+    useEffect(() => {
+        const scrollHandler = () => {
+            setScroll(window.scrollY > 2);
+        };
+
+        window.addEventListener('scroll', scrollHandler);
+
+        return () => {
+            window.removeEventListener('scroll', scrollHandler);
+        };
+    }, []);
+
     return (
-        <div>
-            <div className="invisible md:visible fixed z-40 px-16 pt-[12px]">
-                <Link href={"/"}>
-                    <Image src={"/svg/logo.svg"} width={150} height={45} className="cursor-pointer" />
+       <nav className={`fixed top-0 w-full h-20 z-50 ${scroll ? 'transition bg-navy' : 'transition bg-transparent'}`}>
+           <div className="fixed top-4 left-20 cursor-pointer invisible md:visible">
+               <Link href={"/"}>
+                   <Image src="/svg/hdbanner.svg" height={40} width={200} />
                 </Link>
-            </div>
-            <div className="w-screen">
-            <nav className="fixed h-20 invisible md:visible bg-gradient shadow-md z-20 w-screen">
-                <div className="flex w-full justify-center gap-x-2 md:gap-x-8 pt-7">
-                    <NavItem href={"/downloads"}>Downloads</NavItem>
-                    <NavItem href={"/news"}>News</NavItem>
-                    <NavItem href={"/projects"}>Projects</NavItem>
-                    <Dropdown>Community</Dropdown>
-                </div>
-            </nav>
-                <MobileNav></MobileNav>
-            </div>
-        </div>
+           </div>
+           <MobileNav></MobileNav>
+            <span className="flex justify-end invisible md:visible text-xl mx-24 gap-x-6">
+                <NavLink href={"/news"}>News</NavLink>
+                <NavLink href={"/projects"}>Projects</NavLink>
+                <NavLink href={"/downloads"}>Downloads</NavLink>
+                <Dropdown>Community</Dropdown>
+            </span>
+       </nav>
     )
 };

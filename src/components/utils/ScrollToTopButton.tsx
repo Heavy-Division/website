@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { IoCaretUpCircle } from 'react-icons/io5';
+import { BsFillArrowUpSquareFill } from 'react-icons/bs';
 
 export const ScrollToTopButton = () => {
     const [visible, setVisible] = useState(false);
@@ -19,7 +19,9 @@ export const ScrollToTopButton = () => {
     return (
         <>
             {visible && (
-                <IoCaretUpCircle type="button" onClick={handleClick} className="fixed right-0 bottom-0 h-10 w-24 z-50 text-blue-sky text-xl my-10 mx-1 cursor-pointer" />
+                <div className="fixed top-3/4 right-4 w-8 h-8 bg-white rounded-md">
+                <BsFillArrowUpSquareFill onClick={handleClick} className="relative top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 text-emerald-500 cursor-pointer" />
+                </div>
             )}
         </>
     );

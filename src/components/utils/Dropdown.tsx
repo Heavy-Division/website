@@ -23,7 +23,7 @@ export const Dropdown = (props: DropDownProps) => {
         <div>
             <p onMouseEnter={() => setIsShown(true)}
                onMouseLeave={() => setIsShown(false)}
-                className="flex text-lg hover:text-blue-sky cursor-pointer transition">
+               className="hover:text-blue-sky cursor-pointer text-xl mt-6 transition">
                 <span
                     draggable="false"
                     onClick={() => setIsShown(!isShown)}
@@ -32,11 +32,11 @@ export const Dropdown = (props: DropDownProps) => {
                     <FaChevronLeft className={`mt-[4px] ml-1 text-blue-sky z-40 ${isShown && '-rotate-90 transition'} ${!isShown && 'transition'}`}/>
                 </span>
             </p>
-            <div  className="w-24 h-12"
-                onMouseEnter={() => setIsShown(true)}
+            <div className="w-24"
+                 onMouseEnter={() => setIsShown(true)}
                  onMouseLeave={() => setIsShown(false)}>
             {isShown && (
-            <div className="fixed mt-3 py-2 bg-white w-36 rounded-md">
+            <div className="fixed py-2 bg-white h-36 w-36 rounded-md">
                 <ol className="flex flex-col gap-y-2 text-navy font-semibold">
                     <DropDownItem href={"https://discord.gg/ZtbHT7jkMW"}>Discord</DropDownItem>
                     <DropDownItem href={"https://mobile.twitter.com/heavydivsim"}>Twitter</DropDownItem>

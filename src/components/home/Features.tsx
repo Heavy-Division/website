@@ -1,22 +1,32 @@
 import { Container } from '../utils';
-import Image from 'next/image';
+import { Card } from '../utils';
+import { desc } from '../../data';
 
 export const Features = () => {
 
     return (
-        <section id="Features">
-            <Container className="max-w-6xl md:max-w-full min-h-screen">
-                <div className="flex justify-center py-12 md:px-24">
-                <Image src="/svg/LNAV.svg" height={160} width={790} draggable={false} />
+        <section id="features" className="w-screen bg-white md:py-8 md:px-12">
+                <div className="grid grid-cols-1 justify-center md:grid-cols-2 xl:grid-cols-3 gap-4 md:px-6">
+                    <div className="h-[270px] p-12">
+                        <div>
+                           <p className="flex justify-center text-5xl text-navy font-extrabold">
+                               Features
+                            </p>
+                            <hr className="absolute left-1/2 md:left-1/4 xl:left-1/5 transform -translate-x-1/2 text-blue-tailwind border-5 rounded-lg w-[91px] md:w-24"/>
+                            <p className="flex justify-center text-navy font-semibold text-center text-3xl mt-4">
+                                Enhancements B78XH brings to your flying experience
+                            </p>
+                        </div>
+
+                    </div>
+                    <Card title={"LNAV"} body={desc.lnav} url={"/svg/lnav.svg"} className="bg-navy" />
+                    <Card title={"VNAV"} body={desc.lnav} url={"/svg/VNAV.svg"} className="md:bg-navy md:text-white text-navy" />
+                    <Card title={"Hold"} body={desc.lnav} url={"/svg/Hold.svg"} className="bg-navy" />
+                    <Card title={"FMGC"} body={desc.lnav} url={"/svg/CDU.svg"} className="md:bg-navy md:text-white text-navy" />
+                    <Card title={"PFD"} body={desc.lnav} url={"/svg/PFD.svg" } className="bg-navy" />
+                    <Card title={"MFD"} body={desc.lnav} url={"/svg/MFD.svg"}  className="md:bg-navy md:text-white text-navy" />
+                    <Card title={"Sounds"} body={desc.lnav} url={"/svg/lnav.svg"} className="bg-navy" />
                 </div>
-                <div className="flex justify-between gap-12 md:px-24">
-                    <p className="w-72 md:w-96 text-2xl md:text-3xl px-10 md:px-24">LNAV and VNAV enhancements to tackle any route.</p>
-                    <Image src="/svg/Hold.svg" height={400} width={265} draggable={false} objectFit={"contain"} />
-                </div>
-                <div className="flex justify-center md:px-24">
-                    <Image src="/svg/VNAV.svg" height={140} width={650} draggable={false} />
-                </div>
-            </Container>
         </section>
     )
 };
