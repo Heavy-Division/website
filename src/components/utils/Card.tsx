@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-type cardProps = {
+export type cardProps = {
     title: string,
     body: string,
     url: string
@@ -16,8 +16,8 @@ export const Card = (props: cardProps) => (
         <p className="flex flex-wrap w-2/3 text-base">
             {props.body}
         </p>
-        <div className="h-24 mt-8 flex justify-center">
-            <Image src={props.url} height={72} width={300} objectFit={"contain"} draggable={false} />
+        <div className="h-24 flex mt-3 justify-center">
+            <Image src={props.url} height={100} width={300} objectFit={"contain"} layout={"intrinsic"} draggable={false} />
         </div>
     </div>
 )

@@ -9,10 +9,9 @@ export const Features = () => {
                 <div className="grid grid-cols-1 justify-center md:grid-cols-2 xl:grid-cols-3 gap-4 md:px-6">
                     <div className="h-[270px] p-12">
                         <div>
-                           <p className="flex justify-center text-5xl text-navy font-extrabold">
+                           <p className="flex justify-center text-5xl text-navy font-extrabold underline underline-offset-8 decoration-8 decoration-blue-tailwind">
                                Features
                             </p>
-                            <hr className="absolute left-1/2 md:left-1/4 xl:left-1/5 transform -translate-x-1/2 text-blue-tailwind border-5 rounded-lg w-[91px] md:w-24"/>
                             <p className="flex justify-center text-navy font-semibold text-center text-3xl mt-4">
                                 Enhancements B78XH brings to your flying experience
                             </p>

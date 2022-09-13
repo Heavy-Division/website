@@ -1,18 +1,16 @@
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import Image from 'next/image';
 import React, { ReactNode } from 'react';
-import { list } from '../../data';
+import { navMap } from '../../data';
 import { FooterLink } from './NavLink';
 
-type listProps = {
+type navMapProps = {
     title: string,
     content: { name: string, url: string }[],
 }
 
 
-const List = (props: listProps) => {
+const List = (props: navMapProps) => {
     return (
         <div>
             <p className="font-bold text-xl mb-2">{props.title}</p>
@@ -20,7 +18,9 @@ const List = (props: listProps) => {
                 {props.content.map(({name, url}) => {
                     return <li key={name}>
                         <Link href={url}>
-                           <p className="hover:text-blue-sky cursor-pointer font-regular text-colors-gray-400">{name}</p>
+                           <p className="hover:text-blue-sky cursor-pointer font-regular text-colors-gray-400">
+                               {name}
+                           </p>
                         </Link>
                             </li>
                 })}
@@ -41,12 +41,12 @@ export const Footer = () => {
                         <a href="mailto:contact@hdsimulations.com" className="hover:text-blue-sky transition">contact@hdsimulations.com</a>
                     </span>
                 </div>
-                <div className="grid grid-cols-3 w-3/4 gap-x-4 place-items-center">
-                    <List content={list.menu} title={"Menu"} />
-                    <List content={list.projects} title={"Projects"} />
-                    <List content={list.socials} title={"Socials"} />
+                <div className="grid grid-cols-3 w-3/4 md:w-1/3 gap-x-4 place-items-center">
+                    <List title={"Menu"} content={navMap.menu}  />
+                    <List title={"Projects"} content={navMap.projects}  />
+                    <List title={"Socials"} content={navMap.socials}  />
                 </div>
-                <div className="flex flex-row gap-x-4">
+                <div className="flex flex-row gap-x-4 cursor-default">
                     <FooterLink href={"/"}>Source Code</FooterLink>|
                     <FooterLink href={"/"}>Privacy Policy</FooterLink>|
                     <FooterLink href={"/"}>Terms of Service</FooterLink>

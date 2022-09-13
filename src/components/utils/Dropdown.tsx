@@ -21,17 +21,19 @@ export const Dropdown = (props: DropDownProps) => {
     const [isShown, setIsShown] = useState(false);
     return (
         <div>
-            <p onMouseEnter={() => setIsShown(true)}
-               onMouseLeave={() => setIsShown(false)}
-               className="hover:text-blue-sky cursor-pointer text-xl mt-6 transition">
-                <span
-                    draggable="false"
-                    onClick={() => setIsShown(!isShown)}
-                    className="inline-flex font-semibold">
-                           {props.children}
-                    <FaChevronLeft className={`mt-[4px] ml-1 text-blue-sky z-40 ${isShown && '-rotate-90 transition'} ${!isShown && 'transition'}`}/>
-                </span>
-            </p>
+            <Link href={"#community"}>
+                <p onMouseEnter={() => setIsShown(true)}
+                   onMouseLeave={() => setIsShown(false)}
+                   className="hover:text-blue-sky cursor-pointer text-xl mt-6 transition">
+                    <span
+                        draggable="false"
+                        onClick={() => setIsShown(!isShown)}
+                        className="inline-flex font-semibold">
+                               {props.children}
+                        <FaChevronLeft className={`mt-[4px] ml-1 text-blue-sky z-40 ${isShown && '-rotate-90 transition'} ${!isShown && 'transition'}`}/>
+                    </span>
+                </p>
+            </Link>
             <div className="w-24"
                  onMouseEnter={() => setIsShown(true)}
                  onMouseLeave={() => setIsShown(false)}>

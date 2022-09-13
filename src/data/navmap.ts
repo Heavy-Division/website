@@ -1,4 +1,4 @@
-export const list = {
+export const navMap = {
     menu: [
         { name: 'Home', url: '/home' },
         { name: 'News', url: '/news' },
@@ -16,5 +16,10 @@ export const list = {
         { name: 'Twitter', url: '/projects/bot' },
         { name: 'YouTube', url: '/projects/bot' },
         { name: 'GitHub', url: '/projects/bot' },
-    ]
+    ],
+    downloads: [
+        { name: 'Stable', url: '/projects/b78xh' },
+        { name: 'Development', url: '/projects/bot' },
+        { name: 'Experimental', url: '/projects/bot' },
+    ],
 }

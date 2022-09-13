@@ -1,4 +1,4 @@
-import React, {ReactNode} from 'react';
+import React, { ReactNode } from 'react';
 import { Button } from '../components/utils';
 import Image from 'next/image';
 

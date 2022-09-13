@@ -1,10 +1,10 @@
 import { useEffect, useState} from 'react';
 import { Dropdown } from './Dropdown';
-import { MenuButton } from './MenuButton';
 import { NavLink, MobileNavLink } from './NavLink';
-import { Menu } from "./Menu";
+import { Menu, MenuItem } from './Menu';
 import Image from 'next/image';
 import Link from "next/link";
+import { navMap } from '../../data';
 
 export const MobileNav = () => {
     useEffect(() => {
@@ -29,7 +29,7 @@ export const MobileNav = () => {
         }
     }
     return (
-     <div>
+     <div unselectable={"on"}>
          <span className={`fixed shadow-xl w-screen h-2 z-10 md:invisible ${isOpen && 'invisible'}`}>
              <div className="flex justify-center mt-3">
                  <Link href={"/"}>
@@ -37,24 +37,23 @@ export const MobileNav = () => {
                  </Link>
             </div>
          </span>
-         <div className="visible md:invisible">
-             <MenuButton
-                 isOpen={isOpen}
-                 // @ts-ignore
-                 onClick={() => setOpen(!isOpen)}
-                 strokeWidth="3"
-                 color="#fafafa"
-                 transition={{ ease: "easeOut", duration: 0.2 }}
-                 width="32"
-                 height="16"
-                 className="fixed top-8 left-8 z-40 cursor-pointer"
-             />
+         <div className="visible md:invisible absolute top-2 left-3 z-30" onClick={() => setOpen(!isOpen)}>
+              <span className="flex flex-col place-content-center w-10 h-16 transition cursor-pointer md:hidden">
+                  <div className={`${isOpen && 'rotate-45 translate-y-[3px]'} duration-200 h-[3px] bg-white rounded-full`} />
+                  <div className={`${isOpen ? 'h-0' : 'h-[3px] my-[5px]'} bg-white rounded-full`} />
+                  <div className={`${isOpen && '-rotate-45'}  duration-200 h-[3px] bg-white rounded-full`} />
+              </span>
          </div>
-
          <nav>
              {isOpen && (
                  <Menu>
-                     <div onClick={() => setOpen(!isOpen)} className="relative left-1/4 mt-32 text-3xl">
+                     <div onClick={() => setOpen(!isOpen)} className="relative ml-24 mt-24 text-3xl">
+                         <Link href={"/news"}>
+                             <h3 className="font-extrabold hover:underline cursor-pointer">News</h3>
+                         </Link>
+                         <MenuItem href={"/downloads"} title={"Downloads"} content={navMap.downloads} />
+                         <MenuItem title={"Projects"} href={"/projects"} content={navMap.projects} />
+                         <MenuItem title={"Community"} href={"#community"} content={navMap.socials} />
                      </div>
                  </Menu>
              )}
@@ -78,7 +77,8 @@ export const Navbar = () => {
     }, []);
 
     return (
-       <nav className={`fixed top-0 w-full h-20 z-50 ${scroll ? 'transition bg-navy' : 'transition bg-transparent'}`}>
+       <nav className={`fixed top-0 w-full h-20 z-50 ${scroll ? 'transition bg-navy' : 'transition bg-transparent'}`}
+            unselectable={"on"}>
            <div className="fixed top-4 left-20 cursor-pointer invisible md:visible">
                <Link href={"/"}>
                    <Image src="/svg/hdbanner.svg" height={40} width={200} />

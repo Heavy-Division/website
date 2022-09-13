@@ -1,34 +1,28 @@
-import { useState } from 'react';
-import Image from 'next/image';
 import { Button, Container } from '../utils';
-import Link from 'next/link';
+import { BiDonateHeart } from 'react-icons/bi';
 
 
 export const Donate = () => {
-    const [isShown, setIsShown] = useState(false);
-
     return (
-        <section id="Donate">
-            <Container className="max-w-full min-h-screen py-24">
-                <div className="px-12 md:px-24">
-                    <div className="flex flex-wrap justify-between w-full -mx-px overflow-hidden md:-mx-4">
-                        <div className="my-px px-px overflow-hidden md:my-4 md:px-4 md:w-3/4">
-                            <h2>Donate</h2>
-                            <p>Contributions enable us to sustain and grow the project through operating expenses such as hosting and serving downloads. </p>
-                            <p className="my-12">We use Open Collective to make all donations and expenses transparent, which means you can see exactly how we utilize donated funds anytime.</p>
-                        </div>
-                        <div className="my-px px-px w-full overflow-hidden md:my-4 md:px-4 md:w-1/2 lg:w-1/2 xl:w-1/2">
-                            <Image src="/img/donate.png" height={300} width={300} objectFit={"contain"} draggable={false} layout={"responsive"} />
-                        </div>
-                    </div>
-                    <div className="flex justify-center">
-                    <Button onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}
-                            className="bg-blue-tailwind h-16 w-48 p-4 my-24 hover:bg-blue-sky text-2xl">
-                        <Link href="https://opencollective.com/heavy-division-simulations/donate">Donate</Link>
+        <section id="Donate" className="bg-white h-1/2 w-screen py-12">
+                <div className="md:flex md:flex-col md:justify-items-center grid gap-y-4 grid-rows-3 place-items-center">
+                    <p className="flex justify-center font-extrabold w-full h-full text-transparent bg-clip-text text-6xl bg-gradient-to-r from-blue-tailwind to-sky-300">
+                        Donate <BiDonateHeart className="m-3 text-blue-sky"/>
+                    </p>
+                    <p className="text-navy text-xl w-2/3">
+                        Contributions enable us to sustain and grow the project through operating expenses such as
+                        hosting and serving downloads. We use Open Collective to make all donations and expenses
+                        transparent, which means you can see exactly how we utilize donated* funds anytime.
+                    </p>
+                    <p className="text-navy text-opacity-80 w-1/2">
+                        *No profit is generated from donations. Donating does not guarantee access to additional content
+                        nor its exclusivity if such content is ever given.
+                    </p>
+                    <Button className="border-2 border-navy text-navy p-3 h-16 w-48 text-2xl
+                     hover:bg-navy hover:text-white">
+                        <a href="https://opencollective.com/heavy-division-simulations">Donate</a>
                     </Button>
-                    </div>
                 </div>
-            </Container>
         </section>
     );
 };
