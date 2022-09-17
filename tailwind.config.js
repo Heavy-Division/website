@@ -62,21 +62,6 @@ module.exports = {
           '6xl': '4rem',
           '7xl': '5rem',
         },
-        extend: {
-          spacing: {
-            '1': '4.375rem',
-            '2': '8rem',
-            '3': '16rem',
-            '4': '24rem',
-            '5': '32rem',
-            '6': '48rem',
-            '7': '64rem',
-            '8': '80rem',
-            '9': '96rem',
-            '10': '112rem',
-            '11': '128rem',
-            '12': '144rem',
-          },
           borderRadius: {
             '4xl': '2rem',
           }
@@ -85,5 +70,4 @@ module.exports = {
     plugins: [
       require('@tailwindcss/typography'),
     ],
-  }
 }

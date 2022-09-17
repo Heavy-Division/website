@@ -1,9 +1,9 @@
 import { useEffect, useState} from 'react';
 import { Dropdown } from './Dropdown';
-import { NavLink, MobileNavLink } from './NavLink';
+import { NavLink } from './NavLink';
 import { Menu, MenuItem } from './Menu';
 import Image from 'next/image';
-import Link from "next/link";
+import Link from 'next/link';
 import { navMap } from '../../data';
 
 export const MobileNav = () => {
@@ -47,13 +47,13 @@ export const MobileNav = () => {
          <nav>
              {isOpen && (
                  <Menu>
-                     <div onClick={() => setOpen(!isOpen)} className="relative ml-24 mt-24 text-3xl">
-                         <Link href={"/news"}>
-                             <h3 className="font-extrabold hover:underline cursor-pointer">News</h3>
+                     <div onClick={() => setOpen(!isOpen)} className="relative text-3xl">
+                         <Link href={"/notams"}>
+                             <h2 className="font-extrabold hover:underline cursor-pointer">News</h2>
                          </Link>
-                         <MenuItem href={"/downloads"} title={"Downloads"} content={navMap.downloads} />
-                         <MenuItem title={"Projects"} href={"/projects"} content={navMap.projects} />
-                         <MenuItem title={"Community"} href={"#community"} content={navMap.socials} />
+                             <MenuItem href={"/downloads"} title={"Downloads"} content={navMap.downloads} />
+                             <MenuItem title={"Projects"} href={"/projects"} content={navMap.projects} />
+                             <MenuItem title={"Community"} href={""} content={navMap.socials} />
                      </div>
                  </Menu>
              )}
@@ -77,7 +77,7 @@ export const Navbar = () => {
     }, []);
 
     return (
-       <nav className={`fixed top-0 w-full h-20 z-50 ${scroll ? 'transition bg-navy' : 'transition bg-transparent'}`}
+       <nav className={`fixed w-full h-20 top-0 z-50 ${scroll ? 'transition shadow-2xl bg-navy' : 'transition bg-transparent'}`}
             unselectable={"on"}>
            <div className="fixed top-4 left-20 cursor-pointer invisible md:visible">
                <Link href={"/"}>
@@ -86,7 +86,7 @@ export const Navbar = () => {
            </div>
            <MobileNav></MobileNav>
             <span className="flex justify-end invisible md:visible text-xl mx-24 gap-x-6">
-                <NavLink href={"/news"}>News</NavLink>
+                <NavLink href={"/notams"}>News</NavLink>
                 <NavLink href={"/projects"}>Projects</NavLink>
                 <NavLink href={"/downloads"}>Downloads</NavLink>
                 <Dropdown>Community</Dropdown>

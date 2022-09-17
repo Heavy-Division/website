@@ -1,30 +1,42 @@
 import { Container } from '../utils';
 import { Card } from '../utils';
-import { desc } from '../../data';
+import { cardData } from '../../data';
+import { useEffect, useState } from 'react';
 
 export const Features = () => {
+    useEffect(() => {
+        const resizeHandler = () => {
+            if (window.innerWidth >= 768) {
+                setWhite(false);
+            }
+        };
 
+        window.addEventListener('resize', resizeHandler);
+
+        return () => {
+            window.removeEventListener('resize', resizeHandler);
+        };
+    }, []);
+
+        const [white, setWhite] = useState(true);
     return (
-        <section id="features" className="w-screen bg-white md:py-8 md:px-12">
-                <div className="grid grid-cols-1 justify-center md:grid-cols-2 xl:grid-cols-3 gap-4 md:px-6">
-                    <div className="h-[270px] p-12">
+        <section id="features" className="w-screen bg-white md:py-8 md:px-8">
+                <div className="grid grid-cols-1 place-items-center mx-auto gap-y-4 lg:grid-cols-2 2xl:grid-cols-3 md:gap-4 md:px-6">
+                    <div className="h-[270px] p-10">
                         <div>
                            <p className="flex justify-center text-5xl text-navy font-extrabold underline underline-offset-8 decoration-8 decoration-blue-tailwind">
                                Features
                             </p>
-                            <p className="flex justify-center text-navy font-semibold text-center text-3xl mt-4">
+                            <p className="flex justify-center text-navy font-semibold text-center text-3xl mt-2">
                                 Enhancements B78XH brings to your flying experience
                             </p>
                         </div>
-
                     </div>
-                    <Card title={"LNAV"} body={desc.lnav} url={"/svg/lnav.svg"} className="bg-navy" />
-                    <Card title={"VNAV"} body={desc.lnav} url={"/svg/VNAV.svg"} className="md:bg-navy md:text-white text-navy" />
-                    <Card title={"Hold"} body={desc.lnav} url={"/svg/Hold.svg"} className="bg-navy" />
-                    <Card title={"FMGC"} body={desc.lnav} url={"/svg/CDU.svg"} className="md:bg-navy md:text-white text-navy" />
-                    <Card title={"PFD"} body={desc.lnav} url={"/svg/PFD.svg" } className="bg-navy" />
-                    <Card title={"MFD"} body={desc.lnav} url={"/svg/MFD.svg"}  className="md:bg-navy md:text-white text-navy" />
-                    <Card title={"Sounds"} body={desc.lnav} url={"/svg/lnav.svg"} className="bg-navy" />
+                    {cardData.features.map(({title, body, image}) => {
+                        return <Card key={title}
+                                     title={title}
+                                     body={body} image={image} />
+                    })}
                 </div>
         </section>
     )

@@ -12,7 +12,7 @@ const Privacy = () => {
             <header>
                 <div className="object-cover relative z-0 w-screen h-screen shadow-2xl opacity-20">
                     <Image
-                        src="/img/b78xh_side.png"
+                        src="/img/landing.png"
                         alt="Privacy policy"
                         layout="fill"
                         objectFit="cover"
@@ -47,7 +47,7 @@ const Privacy = () => {
                     <p>Author: Yoshi Nakajima</p>
                 </div>
                 <div className="w-0">
-                    <a className="hover:text-blue-light underline" href="" target="_blank" rel="noreferrer"> //TODO: Add privacy policy pdf and link
+                    <a className="hover:text-blue-light underline" href="" target="_blank" rel="noreferrer">
                         <p>Download</p>
                     </a>
                 </div>

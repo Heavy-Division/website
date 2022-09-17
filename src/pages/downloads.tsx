@@ -8,7 +8,7 @@ type downloadItemProps = {
 }
 
 export const DownloadItem = (props: downloadItemProps) => (
-    <div className="my-4 px-4 overflow-hidden sm:my-3 sm:px-3 md:my-3 md:px-3 md:w-1/3 lg:my-1 lg:px-1 lg:w-1/3 xl:my-6 xl:px-6 xl:w-1/3">
+    <div className="my-4 px-4 overflow-hidden sm:my-3 sm:px-3 md:my-3 md:px-3 md:w-1/3 lg:my-1 lg:px-1 lg:w-1/3 xl:my-6 xl:px-6 xl:w-1/3 text-white">
         <Button className="border-2 border-white w-48 h-16 mt-12 hover:bg-white hover:text-navy text-xl sm:text-sm">{props.children}</Button>
         <hr className="mt-10"></hr>
         <p className="text-center sm:text-start text-xl sm:text-sm mt-12 w-48">{props.description}</p>

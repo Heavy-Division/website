@@ -6,8 +6,8 @@ export const Donate = () => {
     return (
         <section id="Donate" className="bg-white h-1/2 w-screen py-12">
                 <div className="md:flex md:flex-col md:justify-items-center grid gap-y-4 grid-rows-3 place-items-center">
-                    <p className="flex justify-center font-extrabold w-full h-full text-transparent bg-clip-text text-6xl bg-gradient-to-r from-blue-tailwind to-sky-300">
-                        Donate <BiDonateHeart className="m-3 text-blue-sky"/>
+                    <p className="flex justify-center font-extrabold text-5xl gap-x-4 text-navy">
+                        Donate <BiDonateHeart className="text-6xl text-navy"/>
                     </p>
                     <p className="text-navy text-xl w-2/3">
                         Contributions enable us to sustain and grow the project through operating expenses such as

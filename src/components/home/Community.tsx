@@ -37,12 +37,12 @@ export const Community = () => {
 
     }, []);
     return (
-        <section id="community" className="bg-gradient py-10">
+        <section id="community" className="py-10">
                 <div className="grid grid-col place-items-center">
                    <p className="text-4xl font-black md:justify-start">Community Insights</p>
-                    <div className="bg-blue-tailwind w-96 md:w-3/4 h-fit mt-8 p-8">
+                    <div className="bg-blue-tailwind md:w-3/4 h-fit mt-4 p-8">
                         <p className="font-extrabold text-3xl">Statistics</p>
-                        <div className="grid grid-col md:flex md:justify-center gap-x-12 place-items-center mt-2 gap-y-2">
+                        <div className="grid grid-col md:flex md:justify-center gap-x-12 place-items-center gap-y-2">
                             <Statistic icon={faCodeCommit} statCount={commitCount} statName={"Commits"} />
                             <Statistic icon={faPerson} statCount={contributorCount} statName={"Contributors"} />
                             <Statistic icon={faArrowDown} statCount={'50K+'} statName={"Downloads"} />

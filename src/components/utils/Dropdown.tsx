@@ -24,7 +24,7 @@ export const Dropdown = (props: DropDownProps) => {
             <Link href={"#community"}>
                 <p onMouseEnter={() => setIsShown(true)}
                    onMouseLeave={() => setIsShown(false)}
-                   className="hover:text-blue-sky cursor-pointer text-xl mt-6 transition">
+                   className="text-white hover:text-blue-sky cursor-pointer text-xl mt-6 transition">
                     <span
                         draggable="false"
                         onClick={() => setIsShown(!isShown)}

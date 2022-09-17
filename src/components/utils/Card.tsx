@@ -1,23 +1,29 @@
 import Image from 'next/image';
+import Link from 'next/link';
+import { ReactNode } from 'react';
 
 export type cardProps = {
     title: string,
     body: string,
-    url: string
+    image: string
     className?: string,
+    children?: ReactNode
 }
 
 
 export const Card = (props: cardProps) => (
-    <div className={`h-[270px] px-12 py-2 hover:opacity-90 md:rounded-md transition duration-150 ${props.className}`}>
-        <p className="text-4xl font-extrabold">
-            {props.title}
-        </p>
-        <p className="flex flex-wrap w-2/3 text-base">
-            {props.body}
-        </p>
-        <div className="h-24 flex mt-3 justify-center">
-            <Image src={props.url} height={100} width={300} objectFit={"contain"} layout={"intrinsic"} draggable={false} />
+    <div>
+        <div className={`min-h-[290px] bg-navy w-[419.06px] px-12 p-2 hover:opacity-90 my-2 rounded-md transition duration-300 text-white ${props.className}`}>
+            <p className="text-2xl lg:text-3xl font-extrabold">
+                {props.title}
+            </p>
+            <p className="text-md flex">
+                {props.body}
+            </p>
+            <div className="flex mt-8 max-h-24 justify-center">
+                <Image src={props.image} height={150} width={300} objectFit={"contain"} layout={"fixed"} draggable={false} />
+            </div>
         </div>
+        {props.children}
     </div>
 )

@@ -8,8 +8,6 @@ const App = ({ Component, pageProps }: AppProps) => (
 
     <div className="root">
       <Head>
-          {/*AOS Library*/}
-          <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <meta charSet="utf-8" />
           <meta name="theme-color" content="#00c2cc" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -36,9 +34,9 @@ const App = ({ Component, pageProps }: AppProps) => (
             name="og:image"
             content="/B78XH_Side.png"
         />
-      </Head>
+        </Head>
         <Navbar />
-      <Component {...pageProps} />
+        <Component {...pageProps} />
         <ScrollToTopButton />
         <Footer />
     </div>

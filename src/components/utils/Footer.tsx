@@ -33,7 +33,7 @@ export const Footer = () => {
     const year = new Date().getFullYear();
    return (
         <footer>
-            <div className="grid grid-rows-3 place-items-center">
+            <div className="grid grid-rows-3 place-items-center text-white">
                 <div className="grid grid-rows-2 justify-center">
                     <Image src="/svg/hdbanner.svg" height={45} width={250} />
                     <span className="mt-3 inline-flex justify-center">
@@ -48,8 +48,8 @@ export const Footer = () => {
                 </div>
                 <div className="flex flex-row gap-x-4 cursor-default">
                     <FooterLink href={"/"}>Source Code</FooterLink>|
-                    <FooterLink href={"/"}>Privacy Policy</FooterLink>|
-                    <FooterLink href={"/"}>Terms of Service</FooterLink>
+                    <FooterLink href={"/privacy"}>Privacy Policy</FooterLink>|
+                    <FooterLink href={"/tos"}>Terms of Service</FooterLink>
                 </div>
                 <p className="mb-16">© Heavy Division and its contributors 2020-{year}</p>
             </div>
