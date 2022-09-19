@@ -1,0 +1,22 @@
+name: Feature Request
+description: Suggest a new feature for the aircraft
+labels: [Request]
+body:
+  - type: markdown
+    attributes:
+      value: "# Website Feature Request Form"
+  - type: textarea
+    id: desc
+    attributes:
+      label: Description
+      description: Describe the feature you'd like to see implemented. Is your feature request related to a problem?
+    validations:
+      required: true
+  - type: input
+    id: discord
+    attributes:
+      label: Discord Username (optional)
+      description: You may optionally provide your discord username, so that we may contact you directly about the issue.
+      placeholder: ex. username#1234
+    validations:
+      required: false
