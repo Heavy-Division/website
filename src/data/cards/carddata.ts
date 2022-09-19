@@ -27,7 +27,7 @@ export const cardData = {
         },
         {
             title: 'PFD',
-            body: 'Performance saving backend and ',
+            body: 'Performance saving display rewrite',
             image: '/svg/PFD.svg',
         },
         {

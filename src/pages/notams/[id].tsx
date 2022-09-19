@@ -18,7 +18,7 @@ const Post = ({ content: { authors, category, contentHtml, date, readingStats, t
             <title>
                 {title}
                 {' '}
-                - FlyByWire Simulations
+                - Heavy Division
             </title>
 
             <meta name="twitter:card" content="summary_large_image" />
