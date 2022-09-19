@@ -1,6 +1,7 @@
 import { ReactNode, useState } from 'react';
 import { FaChevronLeft } from 'react-icons/fa';
 import Link from 'next/link';
+import { navMap } from '../../data';
 
 type DropDownProps = {
     children: ReactNode,

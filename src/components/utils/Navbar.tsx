@@ -49,7 +49,7 @@ export const MobileNav = () => {
                  <Menu>
                      <div onClick={() => setOpen(!isOpen)} className="relative text-3xl">
                          <Link href={"/notams"}>
-                             <h2 className="font-extrabold hover:underline cursor-pointer">News</h2>
+                             <h3 className="font-extrabold hover:underline cursor-pointer">News</h3>
                          </Link>
                              <MenuItem href={"/downloads"} title={"Downloads"} content={navMap.downloads} />
                              <MenuItem title={"Projects"} href={"/projects"} content={navMap.projects} />

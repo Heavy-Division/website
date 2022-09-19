@@ -34,13 +34,13 @@ export const MenuItem = (props: listProps) => {
     return (
         <div className="my-4">
             <Link href={props.href}>
-                <h3 className="font-extrabold text-4xl hover:underline transition cursor-pointer">{props.title}</h3>
+                <h3 className="font-extrabold text-3xl hover:underline transition cursor-pointer">{props.title}</h3>
             </Link>
             <ul className="ml-6 pl-3 border-l-2 border-white border-opacity-50">
                 {props.content.map(({name, url}) => {
                     return <li className="my-2" key={name}>
                         <Link href={url}>
-                            <p className={`cursor-pointer border-white text-2xl transition font-regular hover:translate-x-2`}>
+                            <p className={`cursor-pointer border-white text-xl transition font-regular hover:translate-x-2`}>
                                 {name}
                             </p>
                         </Link>
