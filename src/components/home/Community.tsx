@@ -6,7 +6,6 @@ import { Container } from '../utils';
 
 const COMMIT_COUNT_ENDPOINT = 'https://api.github.com/repos/heavy-division/b78xh/commits?per_page=1';
 const CONTRIBUTOR_COUNT_ENDPOINT = 'https://api.github.com/repos/heavy-division/b78xh/contributors?per_page=1';
-const DOWNLOAD_COUNT_ENDPOINT = 'https://api.github.com/repos/heavy-division/b78xh/releases/0.1.14';
 
 const Statistic = (props: {statCount: string, statName: string, icon: IconProp}) => (
     <div id={props.statName} className="grid grid-col place-items-center">
@@ -40,7 +39,7 @@ export const Community = () => {
         <section id="community" className="py-10">
                 <div className="grid grid-col place-items-center">
                    <p className="text-4xl font-black md:justify-start">Community Insights</p>
-                    <div className="bg-blue-tailwind md:w-3/4 h-fit mt-4 p-8">
+                    <div className="bg-blue-tailwind md:w-3/4 h-fit p-8">
                         <p className="font-extrabold text-3xl">Statistics</p>
                         <div className="grid grid-col md:flex md:justify-center gap-x-12 place-items-center gap-y-2">
                             <Statistic icon={faCodeCommit} statCount={commitCount} statName={"Commits"} />

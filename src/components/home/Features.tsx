@@ -21,7 +21,7 @@ export const Features = () => {
         const [white, setWhite] = useState(true);
     return (
         <section id="features" className="w-screen bg-white md:py-8 md:px-8">
-                <div className="grid grid-cols-1 place-items-center mx-auto gap-y-4 lg:grid-cols-2 2xl:grid-cols-3 md:gap-4 md:px-6">
+                <div className="grid grid-cols-1 place-items-center mx-auto lg:grid-cols-2 2xl:grid-cols-3 md:gap-4 md:px-6">
                     <div className="h-[270px] p-10">
                         <div>
                            <p className="flex justify-center text-5xl text-navy font-extrabold underline underline-offset-8 decoration-8 decoration-blue-tailwind">

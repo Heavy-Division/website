@@ -7,7 +7,7 @@ export const B787Hero = () => {
             <section id="hero">
                 <Image src={"/img/image4.jpg"} objectFit={"cover"} layout={"fill"} className="opacity-80" />
                 <Container className="grid place-items-center md:justify-end max-w-6xl md:max-w-7xl mx-auto h-screen">
-                        <div className="bg-white backdrop-blur-md p-9 rounded-md bg-opacity-10">
+                        <div className="bg-white backdrop-blur-md p-9 rounded-md shadow-2xl bg-opacity-10">
                             <Image src={"/svg/b78xh.svg"} objectFit={"contain"} draggable={false} height={60} width={300} />
                             <h4 className="mt-5">
                                 A refresh of the 787-10 for Microsoft Flight Simulator

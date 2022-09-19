@@ -13,7 +13,7 @@ export type cardProps = {
 
 export const Card = (props: cardProps) => (
     <div>
-        <div className={`min-h-[290px] bg-navy w-[419.06px] px-12 p-2 hover:opacity-90 my-2 rounded-md transition duration-300 text-white ${props.className}`}>
+        <div className={`min-h-[290px] bg-navy w-screen md:w-[419.06px] px-12 p-2 hover:opacity-90 md:rounded-md transition duration-300 text-white ${props.className}`}>
             <p className="text-2xl lg:text-3xl font-extrabold">
                 {props.title}
             </p>
