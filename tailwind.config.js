@@ -30,7 +30,6 @@ module.exports = {
         colors: {
           colors,
           'navy': '#000E30',
-          'darqua': '#06131D',
           'light-navy': '#202E4C',
           'purple': '#7e5bef',
           'pink': '#ff49db',

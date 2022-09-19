@@ -3,14 +3,10 @@ import Image from 'next/image';
 
 const Privacy = () => {
     const bodyRef = useRef<HTMLDivElement>(null);
-    const handleScroll = () => {
-        bodyRef.current?.scrollIntoView();
-    };
-
     return (
         <>
             <header>
-                <div className="object-cover relative z-0 w-screen h-screen shadow-2xl opacity-20">
+                <div className="relative z-0 h-screen w-screen object-cover opacity-20 shadow-2xl">
                     <Image
                         src="/img/landing.png"
                         alt="Privacy policy"
@@ -18,13 +14,12 @@ const Privacy = () => {
                         objectFit="cover"
                     />
                 </div>
-                <div className="flex absolute top-0 bottom-0 z-20 justify-center w-full">
-                    <div className="relative justify-center my-auto text-center sm:flex sm:space-x-10 sm:divide-x md:w-4/5 xl:justify-start xl:w-3/4 sm:item-center">
-
+                <div className="absolute inset-y-0 z-20 flex w-full justify-center">
+                    <div className="sm:item-center relative my-auto justify-center text-center sm:flex sm:space-x-10 sm:divide-x md:w-4/5 xl:w-3/4 xl:justify-start">
 
                         <div className="mx-auto w-1/2 text-center sm:space-x-10 md:text-left">
-                            <div className="space-y-2 w-full divide-y divide-gray-400 sm:ml-10">
-                                <h1 className="text-4xl font-medium text-blue-light sm:text-8xl md:text-7xl">
+                            <div className="divide-gray-400 w-full space-y-2 divide-y sm:ml-10">
+                                <h1 className="text-blue-light text-4xl font-medium sm:text-8xl md:text-7xl">
                                     Privacy Policy
                                 </h1>
                             </div>
@@ -40,8 +35,8 @@ const Privacy = () => {
             {/* HandleScroll scrolls to this div */}
             <div ref={bodyRef} />
 
-            <article className="px-20 my-40 w-full max-w-6xl md:mx-auto xl:px-0">
-                <h1 className="mt-40 text-6xl font-semibold text-blue-light">Privacy Policy</h1>
+            <article className="my-40 w-full max-w-6xl px-20 md:mx-auto xl:px-0">
+                <h1 className="text-blue-light mt-40 text-6xl font-semibold">Privacy Policy</h1>
                 <div className="mt-2">
                     <p>Effective: 21/12/2020</p>
                     <p>Author: Yoshi Nakajima</p>
@@ -52,7 +47,7 @@ const Privacy = () => {
                     </a>
                 </div>
                 <div className=" mt-10">
-                    <h1 className="text-4xl font-semibold text-blue-light-contrast">What information do we collect?</h1>
+                    <h1 className="text-blue-light-contrast text-4xl font-semibold">What information do we collect?</h1>
                     <div className="mt-4 text-xl font-light leading-9">
                         <p>We may collect, store and use the following kinds of personal data:</p>
                         <p>
@@ -68,7 +63,7 @@ const Privacy = () => {
                             notifications.
                         </p>
                     </div>
-                    <h1 className="mt-8 text-4xl font-semibold text-blue-light-contrast">Information about website visits</h1>
+                    <h1 className="text-blue-light-contrast mt-8 text-4xl font-semibold">Information about website visits</h1>
                     <div className="mt-4 text-xl font-light leading-9">
                         <p>
                             We may collect information about your visits to this website such as your IP address, geographical location, browser type, referral
@@ -94,7 +89,7 @@ const Privacy = () => {
                             have a negative impact upon the usability of many websites.
                         </p>
                     </div>
-                    <h1 className="mt-8 text-4xl font-semibold text-blue-light-contrast">Using your personal data</h1>
+                    <h1 className="text-blue-light-contrast mt-8 text-4xl font-semibold">Using your personal data</h1>
                     <div className="mt-4 text-xl font-light leading-9">
                         <p>
                             Personal data submitted to this website will be used for the purposes specified in this privacy policy or in relevant parts of the website.
@@ -110,7 +105,7 @@ const Privacy = () => {
                             We will not without your express consent provide your personal information to any third parties for the purpose of direct marketing.
                         </p>
                     </div>
-                    <h1 className="mt-8 text-4xl font-semibold text-blue-light-contrast">Other disclosures</h1>
+                    <h1 className="text-blue-light-contrast mt-8 text-4xl font-semibold">Other disclosures</h1>
                     <div className="mt-4 text-xl font-light leading-9">
                         <p>In addition to the disclosures reasonably necessary for the purposes identified elsewhere in this privacy policy, we may disclose information about you:</p>
                         <p>
@@ -124,14 +119,14 @@ const Privacy = () => {
                         </p>
                         <p>4. Except as provided in this privacy policy, we will not provide your information to third parties.</p>
                     </div>
-                    <h1 className="mt-8 text-4xl font-semibold text-blue-light-contrast">Security of your personal data</h1>
+                    <h1 className="text-blue-light-contrast mt-8 text-4xl font-semibold">Security of your personal data</h1>
                     <div className="mt-4 text-xl font-light leading-9">
                         <p>
                             We will take reasonable precautions to prevent the loss, misuse or alteration of your personal information.
                             Of course, data transmission over the internet is inherently insecure, and we cannot guarantee the security of data sent over the internet.
                         </p>
                     </div>
-                    <h1 className="mt-8 text-4xl font-semibold text-blue-light-contrast">Third party websites</h1>
+                    <h1 className="text-blue-light-contrast mt-8 text-4xl font-semibold">Third party websites</h1>
                     <div className="mt-4 text-xl font-light leading-9">
                         <p>The website contains links to other websites. We are not responsible for the privacy policies of third party websites.</p>
                     </div>

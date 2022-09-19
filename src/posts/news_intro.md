@@ -4,7 +4,7 @@ date: '2022-09-20'
 authors:
   - 'Yoshi'
 category: 'UPDATE'
-metaImage: '/img/landing.png'
+metaImage: '/img/takeoff.jpg'
 metaAlt: 'Heavy Division'
 ---
 

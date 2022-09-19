@@ -18,10 +18,11 @@ export const navMap = {
         { name: 'Twitter', url: 'https://mobile.twitter.com/heavydivsim' },
         { name: 'YouTube', url: 'https://www.youtube.com/channel/UCPqKuCF7oosgDfUn6jmYdgw' },
         { name: 'GitHub', url: 'https://github.com/Heavy-Division' },
+        { name: 'Donate', url: 'https://opencollective.com/heavy-division-simulations/donate' },
     ],
     downloads: [
         { name: 'Stable', url: 'https://github.com/Heavy-Division/B78XH/releases/download/v0.1.14/B78XH-v0.1.14.zip \n' },
         { name: 'Development', url: 'https://github.com/Heavy-Division/B78XH/archive/refs/heads/main.zip\n' },
         { name: 'Experimental', url: 'https://github.com/Heavy-Division/B78XH/archive/refs/heads/experimental.zip' },
     ],
-}
+};
