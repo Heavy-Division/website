@@ -1,9 +1,12 @@
+import { motion } from 'framer-motion';
 import { Card } from '../utils';
 import { cardData } from '../../data';
 
 export const Features = () => (
     <section id="features" className="w-screen bg-white md:p-8">
-        <div className="mx-auto grid grid-cols-1 place-items-center md:gap-4 md:px-6 lg:grid-cols-2 2xl:grid-cols-3">
+        <div
+            className="mx-auto grid grid-cols-1 place-items-center md:gap-4 md:px-6 lg:grid-cols-2 2xl:grid-cols-3"
+        >
             <div className="h-[270px] p-10">
                 <div>
                     <p className="flex justify-center text-5xl font-extrabold text-navy underline decoration-blue-tailwind decoration-8 underline-offset-8">
@@ -15,12 +18,23 @@ export const Features = () => (
                 </div>
             </div>
             {cardData.features.map(({ title, body, image }) => (
-                <Card
-                    key={title}
-                    title={title}
-                    body={body}
-                    image={image}
-                />
+                <motion.div
+                    initial={{ opacity: 0, x: 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{
+                        delay: 0.2,
+                        x: { duration: 1 },
+                        default: { ease: 'linear' },
+                    }}
+                    viewport={{ once: true }}
+                >
+                    <Card
+                        key={title}
+                        title={title}
+                        body={body}
+                        image={image}
+                    />
+                </motion.div>
             ))}
         </div>
     </section>
