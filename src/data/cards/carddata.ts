@@ -13,7 +13,7 @@ export const cardData = {
         {
             title: 'Hold',
             body: 'With distance and time interval support',
-            image: '/svg/hold.svg',
+            image: '/svg/Hold.svg',
         },
         {
             title: 'FMGC',
