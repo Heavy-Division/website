@@ -12,7 +12,7 @@ export const Menu = (props: menuProps) => (
         animate={{ opacity: 100 }}
         transition={{ duration: 2 }}
     >
-        <div className="fixed top-0 z-20 max-h-screen max-w-fit bg-blue-tailwind py-16 pl-16 pr-24 shadow-2xl">
+        <div className="fixed top-0 z-20 min-h-screen max-w-fit bg-blue-tailwind py-16 pl-16 pr-24 shadow-2xl">
             <motion.div
                 initial={{ x: -30, opacity: 0.5 }}
                 animate={{ x: 0, opacity: 1 }}
