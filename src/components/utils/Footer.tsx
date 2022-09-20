@@ -2,13 +2,19 @@ import Link from 'next/link';
 import Image from 'next/image';
 import React from 'react';
 import { navMap } from '../../data';
-import { FooterLink } from './NavLink';
+import { linkProps } from './NavLink';
 
 type navMapProps = {
     title: string,
     content: { name: string, url: string }[],
     className?: string,
 }
+
+export const FooterLink = (props: linkProps) => (
+    <p className="font-regular text-sm hover:text-blue-sky">
+        <Link href={props.href}>{props.children}</Link>
+    </p>
+);
 
 const List = (props: navMapProps) => (
     <div>
