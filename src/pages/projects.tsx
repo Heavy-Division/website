@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Button, Card, cardProps } from '../components/utils';
+import { Card, cardProps } from '../components/utils';
 import { cardData } from '../data';
 
 type projectCardProps = cardProps & {
@@ -15,23 +15,14 @@ type cardMapProps = {
 };
 
 const ProjectCard = (props: projectCardProps) => (
-    <>
+    <Link href={props.href}>
         <Card
             title={props.title}
             image={props.image}
             body={props.body}
-            className="transition md:bg-navy md:shadow-2xl"
-        >
-            <Link href={props.href}>
-                <Button className=" transnform relative left-1/2
-            mt-3 h-12 w-24 -translate-x-1/2 ring-2 ring-blue-sky hover:bg-blue-sky"
-                >
-                    <p className="font-extrabold">explore</p>
-                </Button>
-            </Link>
-        </Card>
-
-    </>
+            className="md:shadow-2x transition md:bg-navy cursor-pointer"
+        />
+    </Link>
 );
 
 const ProjectMap = (props: cardMapProps) => (
@@ -48,12 +39,12 @@ const ProjectMap = (props: cardMapProps) => (
 );
 
 const Projects = () => (
-    <section className="my-36 grid min-h-screen grid-cols-1 place-items-center text-white md:px-24 lg:flex">
-        <div className="mx-12">
-            <h1 className="underline decoration-blue-sky decoration-8">Projects</h1>
-            <p className="mb-12 text-2xl">An overview of open source Heavy Division projects.</p>
+    <section className="min-h-screen my-32">
+        <div className="grid grid-col place-items-center gap-y-4 my-4">
+            <h1 className="underline decoration-8 decoration-blue-tailwind underline-offset-8">Projects</h1>
+            <p className="mx-4 text-md md:text-xl text-center">An overview of Heavy Division Projects. Click on each to explore it's repository</p>
         </div>
-        <div className="grid gap-8 lg:grid-cols-2 xl:grid-cols-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto md:gap-4 place-items-center">
             <ProjectMap content={cardData.projects} />
         </div>
     </section>

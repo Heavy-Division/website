@@ -49,12 +49,6 @@ export const cardData = {
             href: 'https://github.com/Heavy-Division/B78XH',
         },
         {
-            title: 'B789H',
-            body: 'Our in-house flagship aircraft featuring a custom 3D model and flight model',
-            image: '/svg/B789H.svg',
-            href: '/',
-        },
-        {
             title: 'Avionics and Systems',
             body: 'A low-level approach to flight systems logic using Web Assembly',
             image: '/svg/WA.svg',

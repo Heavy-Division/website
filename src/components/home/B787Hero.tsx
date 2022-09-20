@@ -4,10 +4,10 @@ import { Container, Button } from '../utils';
 
 export const B787Hero = () => (
     <section id="hero">
-        <Image src="/img/image4.jpg" objectFit="cover" layout="fill" className="opacity-60" draggable={false} />
+        <Image src="/img/image4.jpg" objectFit="cover" layout="fill" className="opacity-60" draggable={false} alt="Hero Image" />
         <Container className="mx-auto grid h-screen max-w-6xl place-items-center md:max-w-7xl md:justify-end">
             <div className="z-10">
-                <Image src="/svg/b78xh.svg" objectFit="contain" draggable={false} height={60} width={300} />
+                <Image src="/svg/B78XH.svg" objectFit="contain" draggable={false} height={60} width={300} alt="B78XH.svg" />
                 <h4 className="mt-5">
                     A refresh of the 787-10 for Microsoft Flight Simulator
                 </h4>
