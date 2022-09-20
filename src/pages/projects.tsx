@@ -20,7 +20,7 @@ const ProjectCard = (props: projectCardProps) => (
             title={props.title}
             image={props.image}
             body={props.body}
-            className="md:shadow-2x transition md:bg-navy cursor-pointer"
+            className="md:shadow-2x cursor-pointer transition md:bg-navy"
         />
     </Link>
 );
@@ -39,12 +39,12 @@ const ProjectMap = (props: cardMapProps) => (
 );
 
 const Projects = () => (
-    <section className="min-h-screen my-32">
-        <div className="grid grid-col place-items-center gap-y-4 my-4">
-            <h1 className="underline decoration-8 decoration-blue-tailwind underline-offset-8">Projects</h1>
-            <p className="mx-4 text-md md:text-xl text-center">An overview of Heavy Division Projects. Click on each to explore it's repository</p>
+    <section className="my-32 min-h-screen">
+        <div className="grid-col my-4 grid place-items-center gap-y-4">
+            <h1 className="underline decoration-blue-tailwind decoration-8 underline-offset-8">Projects</h1>
+            <p className="text-md mx-4 text-center md:text-xl">An overview of Heavy Division Projects. Click on each to explore it's repository</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto md:gap-4 place-items-center">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 place-items-center md:grid-cols-2 md:gap-4 lg:grid-cols-3">
             <ProjectMap content={cardData.projects} />
         </div>
     </section>

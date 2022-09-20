@@ -8,7 +8,7 @@ const App = ({ Component, pageProps }: AppProps) => (
     <div className="root">
         <Head>
             <meta charSet="utf-8" />
-            <meta name="theme-color" content="#00c2cc" />
+            <meta name="theme-color" content="#0761e2" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
 
             <title>Heavy Division</title>
@@ -31,7 +31,7 @@ const App = ({ Component, pageProps }: AppProps) => (
             <meta
                 key="og:image"
                 name="og:image"
-                content="/B78XH_Side.png"
+                content="/img/image4.png"
             />
         </Head>
         <Navbar />
