@@ -45,7 +45,7 @@ export const cardData = {
         {
             title: 'B78XH',
             body: 'An enhancement modification to the default 787 Asobo Premium Deluxe Aircraft',
-            image: '/svg/b78xh.svg',
+            image: '/svg/B78XH.svg',
             href: 'https://github.com/Heavy-Division/B78XH',
         },
         {
