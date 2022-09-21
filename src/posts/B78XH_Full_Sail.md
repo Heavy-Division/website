@@ -40,13 +40,15 @@ Currently in late development. Comi, the founder of the project, has been hard a
 
 **Status**: Developers Needed
 
-In early stage development. Some workarounds in the past were needed due to various encryptions. With the flight model unlocked we can now apply some more fine tuning to the autopilot logic, but will need more developers to work on this area.
+In early stage development. Some workarounds in the past were needed due to various encryptions. With the flight model unlocked we can now fine-tune the autopilot logic, but will need more developers to work on this area.
 
 ### 3D Model
 
 **Status**: Developers Needed
 
-Currently, in early development. The current state of our aircraft is entirely dependent on Asobo for a 3D model. In theory, we now have access to everything needed to make a functioning standalone plane, with in depth software and custom renderers, but we need more hands on deck to help with the 3D model for the B789H project, our very own 787-9 built on the framework of the B78XH. In particular, we need people who are familiar with UV texturing, 3d modelling, and animations. 
+Currently, in early development. The current state of our aircraft is entirely dependent on Asobo for a 3D model. In theory, we now have access to everything needed to make a functioning standalone plane, with in depth software and custom renderers, but we need more hands on deck to help with the 3D model for the B789H project, our very own 787-9 built on the framework of the B78XH. 
+
+In particular, we need people who are familiar with UV texturing, 3d modelling, and animations. 
 
 ### Fly-by-wire logic
 
@@ -56,7 +58,7 @@ The current implementation of fly-by-wire on the 787 is based on a one-size-fits
 
 ### Debugging/Troubleshooting
 
-Whilst the B78XH remains a perfectly vatsim capable plane, we need more hands on deck to address the current range of known issues affecting users. 
+Whilst the B78XH remains a perfectly VATSIM capable plane, we need more hands on deck to address the current range of known issues affecting users. 
 
 ### Additional Projects needing help
 
