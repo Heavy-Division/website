@@ -25,7 +25,7 @@ const Downloads = () => (
             <Image src="/svg/78x-side.svg" width={1000} height={330} draggable={false} objectFit="contain" layout="fixed" />
         </div>
         <div className="flex justify-center">
-            <Image src="/svg/b78xh.svg" height={68} width={350} draggable={false} />
+            <Image src="/svg/B78XH.svg" height={68} width={350} draggable={false} />
         </div>
         <div className="flex justify-center">
             <div className="flex flex-col gap-x-5 sm:flex-row">
