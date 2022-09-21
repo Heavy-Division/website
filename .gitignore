@@ -25,5 +25,5 @@ yarn-debug.log*
 yarn-error.log*
 .next
 
-/public/img/notams-embed-previews
+/public/img/news-embed-previews
 out
