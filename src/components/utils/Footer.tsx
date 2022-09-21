@@ -58,7 +58,8 @@ export const Footer = () => {
                     <FooterLink href="/tos">Terms of Service</FooterLink>
                 </div>
                 <p className="mb-16">
-                    © Heavy Division and its contributors 2020-{year}
+                    © Heavy Division and its contributors 2020-
+                    {year}
                 </p>
             </div>
         </footer>
