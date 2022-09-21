@@ -50,7 +50,7 @@ export const Footer = () => {
                     <List title="Projects" content={navMap.projects} />
                     <List title="Socials" content={navMap.socials} />
                 </div>
-                <div className="flex cursor-default flex-row gap-x-4">
+                <div className="flex cursor-default flex-row gap-x-4 text-sm">
                     <FooterLink href="/">Source Code</FooterLink>
                     |
                     <FooterLink href="/privacy">Privacy Policy</FooterLink>
