@@ -3,9 +3,9 @@ import { Card } from '../utils';
 import { cardData } from '../../data';
 
 export const Features = () => (
-    <section id="features" className="w-screen bg-white md:p-8">
+    <section id="features" className="w-screen bg-white">
         <div
-            className="mx-auto grid grid-cols-1 place-items-center md:gap-4 md:px-6 lg:grid-cols-2 2xl:grid-cols-3"
+            className="mx-auto grid grid-cols-1 place-items-center md:gap-4 lg:grid-cols-2 2xl:grid-cols-3"
         >
             <div className="h-[270px] p-10">
                 <div>
@@ -19,10 +19,10 @@ export const Features = () => (
             </div>
             {cardData.features.map(({ title, body, image }) => (
                 <motion.div
+                    key={title}
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{
-                        delay: 0.2,
                         x: { duration: 1 },
                         default: { ease: 'linear' },
                     }}

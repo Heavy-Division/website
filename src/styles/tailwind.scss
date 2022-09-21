@@ -12,8 +12,13 @@
     scroll-behavior: smooth;
     overflow-x: hidden;
     background-image: url('/img/bg.png');
+    background-color: #000E30;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  #hero {
+    overflow-x: hidden;
   }
 
   #community {
@@ -23,7 +28,7 @@
     background-attachment: fixed;
   }
   body {
-    @apply overflow-x-hidden text-white;
+    @apply overflow-x-hidden text-white bg-gradient;
   }
 
   h2,h3,h4 {

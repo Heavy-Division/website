@@ -33,14 +33,14 @@ type listProps = {
 export const MenuItem = (props: listProps) => (
     <div className="my-4">
         <Link href={props.href}>
-            <h3 className="cursor-pointer text-3xl font-extrabold transition hover:underline">{props.title}</h3>
+            <h4 className="cursor-pointer ml-4 font-extrabold transition hover:underline">{props.title}</h4>
         </Link>
         {/* eslint-disable-next-line tailwindcss/migration-from-tailwind-2 */}
-        <ul className="ml-6 border-l-2 border-white border-opacity-50 pl-3">
+        <ul className="ml-10 border-l-2 border-white border-opacity-50 pl-3">
             {props.content.map(({ name, url }) => (
                 <li className="my-2" key={name}>
                     <Link href={url}>
-                        <p className="font-regular cursor-pointer border-white text-xl transition hover:translate-x-2">
+                        <p className="font-bold cursor-pointer border-white text-[16px] transition hover:translate-x-2">
                             {name}
                         </p>
                     </Link>

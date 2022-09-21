@@ -13,7 +13,7 @@ export const B787Hero = () => (
                 </h4>
             </div>
             <div className="grid-col z-10 grid justify-center gap-x-8 text-2xl md:grid-cols-2">
-                <Button className="mt-5 h-16 w-full bg-blue-sky p-3 hover:bg-blue-tailwind">
+                <Button className="mt-5 h-16 w-48 bg-blue-sky p-3 hover:bg-blue-tailwind">
                     <Link href="/downloads">Download</Link>
                 </Button>
                 <Button className="mt-5 h-16 w-48 border-4 border-blue-sky p-3 hover:bg-blue-sky">

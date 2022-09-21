@@ -49,7 +49,7 @@ export const MobileNav = () => {
                     <Menu>
                         <div onClick={() => handleClick()} className="relative text-3xl">
                             <Link href="/news">
-                                <h3 className="cursor-pointer font-extrabold hover:underline">News</h3>
+                                <h4 className="cursor-pointer ml-4 font-extrabold hover:underline">News</h4>
                             </Link>
                             <MenuItem href="/downloads" title="Downloads" content={navMap.downloads} />
                             <MenuItem title="Projects" href="/projects" content={navMap.projects} />
@@ -78,7 +78,7 @@ export const Navbar = () => {
 
     return (
         <nav
-            className={`fixed top-0 z-50 h-20 w-full 
+            className={`fixed top-0 z-50 h-20 w-screen 
             ${scroll ? 'bg-navy shadow-md transition' : 'bg-transparent transition'}`}
         >
             <div className="invisible fixed top-4 left-20 cursor-pointer md:visible">
