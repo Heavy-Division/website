@@ -56,7 +56,7 @@
 @tailwind utilities;
 
 @layer utilities {
-  @variants hover, focus {
+  @layer components {
     .px-page {
       @apply px-5 md:px-8;
     }

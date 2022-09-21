@@ -23,7 +23,7 @@ const List = (props: navMapProps) => (
             {props.content.map(({ name, url }) => (
                 <li key={name}>
                     <Link href={url}>
-                        <p className="font-regular cursor-pointer text-colors-gray-400 hover:text-blue-sky">
+                        <p className="font-regular cursor-pointer text-slate-300 hover:text-blue-sky">
                             {name}
                         </p>
                     </Link>
@@ -58,8 +58,7 @@ export const Footer = () => {
                     <FooterLink href="/tos">Terms of Service</FooterLink>
                 </div>
                 <p className="mb-16">
-                    © Heavy Division and its contributors 2020-
-                    {year}
+                    © Heavy Division and its contributors 2020-{year}
                 </p>
             </div>
         </footer>

@@ -1,5 +1,3 @@
-const colors = require('tailwindcss/colors');
-
 module.exports = {
     content: [
         './src/**/*.{js,ts,jsx,tsx}',
@@ -26,7 +24,6 @@ module.exports = {
             borderStyle: ['hover'],
             backgroundImage: { gradient: "url('/img/bg.png')" },
             colors: {
-                colors,
                 'navy': '#000E30',
                 'light-navy': '#202E4C',
                 'purple': '#7e5bef',
