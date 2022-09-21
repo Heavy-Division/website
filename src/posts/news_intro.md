@@ -1,5 +1,5 @@
 ---
-title: 'Heavy Division News: An Introduction'
+title: 'Heavy Division News'
 date: '2022-09-20'
 authors:
   - 'Yoshi'
