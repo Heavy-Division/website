@@ -7,6 +7,18 @@ on:
     branches-ignore:
       - main
 jobs:
+
+  lint:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.draft == false
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v2
+      - name: install
+        run: npm install --no-optional
+      - name: npm run lint
+        run: npm run lint
+
   Deploy-Preview:
     runs-on: ubuntu-latest
     steps:
@@ -19,3 +31,6 @@ jobs:
         run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
       - name: Deploy Project Artifacts to Vercel
         run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
+
+
+
