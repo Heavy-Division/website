@@ -34,10 +34,10 @@ export const Community = () => {
         });
     }, []);
     return (
-        <section id="community" className="py-10">
+        <section id="community">
             <div className="grid-col grid place-items-center">
-                <p className="text-4xl font-black md:justify-start">Community Insights</p>
-                <div className="h-fit bg-blue-tailwind p-8 md:w-3/4">
+                <p className="text-4xl font-black md:justify-start mt-4">Community Insights</p>
+                <div className="h-fit bg-blue-tailwind p-8 mb-12 md:w-3/4">
                     <p className="text-3xl font-extrabold">Statistics</p>
                     <div className="grid-col grid place-items-center gap-x-12 gap-y-2 md:flex md:justify-center">
                         <Statistic icon={faCodeCommit} statCount={commitCount} statName="Commits" />
