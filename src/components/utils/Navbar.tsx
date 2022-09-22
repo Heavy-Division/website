@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Dropdown } from './Dropdown';
 import { NavLink } from './NavLink';
-import {Menu, MenuItem, MenuItemExternal} from './Menu';
+import { Menu, MenuItem, MenuItemExternal } from './Menu';
 import { navMap } from '../../data';
 
 export const MobileNav = () => {
