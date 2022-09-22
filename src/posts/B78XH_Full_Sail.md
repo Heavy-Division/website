@@ -14,7 +14,7 @@ It's now been a year and a half since the Heavy Division project was founded, an
 
 Starting as a solo project with a desire to improve upon the default Asobo 787-10, our team has grown into a staff of 6 with 4 currently on the development team, and 1 developer trainee and 1 media trainee.
 
-As the project continues to grow we will need additional staff, including type-rated 787 pilots. if you'd like to help please ping an admin on our discord or email us at contact@hdsimulations.com.
+As the project continues to grow we will need additional staff, including type-rated 787 pilots. if you'd like to help please ping an admin on our discord or email us at [contact@hdsimulations.com](contact@hdsimulations.com)
 
 ---
 
@@ -40,7 +40,11 @@ Currently in late development. Comi, the founder of the project, has been hard a
 
 **Status**: Developers Needed
 
-In early stage development. Some workarounds in the past were needed due to various encryptions. With the flight model unlocked we can now fine-tune the autopilot logic, but will need more developers to work on this area.
+In early stage development. Some workarounds in the past were required to implement a basic VNAV with descent functionality.
+
+In the aircraft's current state
+
+With the flight model unlocked we can now fine-tune the autopilot logic, but will need more developers to work on this area.
 
 ### 3D Model
 

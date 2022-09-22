@@ -1,0 +1,22 @@
+name: Lint
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+on:
+  push:
+    branches-ignore:
+      - main
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.draft == false
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v2
+      - name: install
+        run: npm install --no-optional
+      - name: npm run lint
+        run: npm run lint
+
+
+

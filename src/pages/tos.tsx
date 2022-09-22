@@ -47,12 +47,6 @@ const Tos = () => {
                     <p>Effective: 21/12/2020</p>
                     <p>Author: Yoshi Nakajima</p>
                 </div>
-                <div className="w-0">
-                    <a className="underline hover:text-blue-sky" href="/" target="_blank" rel="noreferrer">
-                        <p>Download</p>
-                    </a>
-                </div>
-
                 <div className=" mt-10">
                     <h1 className="text-blue-light-contrast text-4xl font-semibold">Minimum Age Requirement</h1>
                     <p className="mt-4 text-xl font-light leading-9">
@@ -89,7 +83,6 @@ const Tos = () => {
                         {' '}
                         copy of the Premium Deluxe version of Microsoft Flight Simulator (MSFS2020)
                     </p>
-
                 </div>
             </article>
         </>
