@@ -86,7 +86,6 @@ const Tos = () => {
                         {' '}
                         copy of the Premium Deluxe version of Microsoft Flight Simulator (MSFS2020)
                     </p>
-
                 </div>
             </article>
         </>
