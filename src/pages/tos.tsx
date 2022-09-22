@@ -47,9 +47,6 @@ const Tos = () => {
                     <p>Effective: 21/12/2020</p>
                     <p>Author: Yoshi Nakajima</p>
                 </div>
-                <div className="w-0">
-                </div>
-
                 <div className=" mt-10">
                     <h1 className="text-blue-light-contrast text-4xl font-semibold">Minimum Age Requirement</h1>
                     <p className="mt-4 text-xl font-light leading-9">
