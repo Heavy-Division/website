@@ -10,9 +10,9 @@ metaAlt: 'Heavy Division'
 
 ## Overview
 
-It's now been a year and a half since the Heavy Division project was founded, and we're coming up on the release of Sim Update 10.
+It's now been a year and a half since the Heavy Division project was founded, and SU10 has just released.
 
-Starting as a solo project with a desire to improve upon the default Asobo 787-10, our team has grown into a staff of 6 with 4 currently on the development team, and 1 developer trainee and 1 media trainee.
+Starting as a solo project with a desire to improve upon the default Asobo 787-10, our team has grown into a staff of 6 with 4 currently on the development team, 1 developer trainee, and 1 media trainee.
 
 As the project continues to grow we will need additional staff, including type-rated 787 pilots. if you'd like to help please ping an admin on our discord or email us at [contact@hdsimulations.com](contact@hdsimulations.com)
 
