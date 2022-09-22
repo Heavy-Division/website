@@ -5,7 +5,7 @@ import { cardData } from '../../data';
 export const Features = () => (
     <section id="features" className="w-screen bg-white">
         <div
-            className="mx-auto grid grid-cols-1 md:max-w-7xl place-items-center py-10 md:gap-4 lg:grid-cols-2 2xl:grid-cols-3"
+            className="mx-auto grid grid-cols-1 place-items-center py-10 md:max-w-7xl md:gap-4 lg:grid-cols-2 2xl:grid-cols-3"
         >
             <div className="h-[270px] p-10">
                 <div>
