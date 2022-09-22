@@ -42,9 +42,6 @@ const Privacy = () => {
                     <p>Author: Yoshi Nakajima</p>
                 </div>
                 <div className="w-0">
-                    <a className="hover:text-blue-light underline" href="" target="_blank" rel="noreferrer">
-                        <p>Download</p>
-                    </a>
                 </div>
                 <div className=" mt-10">
                     <h1 className="text-blue-light-contrast text-4xl font-semibold">What information do we collect?</h1>
@@ -123,7 +120,7 @@ const Privacy = () => {
                     <div className="mt-4 text-xl font-light leading-9">
                         <p>
                             We will take reasonable precautions to prevent the loss, misuse or alteration of your personal information.
-                            Of course, data transmission over the internet is inherently insecure, and we cannot guarantee the security of data sent over the internet.
+                            Data transmission over the internet is inherently insecure, and we cannot guarantee the security of data sent over the internet.
                         </p>
                     </div>
                     <h1 className="text-blue-light-contrast mt-8 text-4xl font-semibold">Third party websites</h1>

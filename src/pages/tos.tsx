@@ -48,9 +48,6 @@ const Tos = () => {
                     <p>Author: Yoshi Nakajima</p>
                 </div>
                 <div className="w-0">
-                    <a className="underline hover:text-blue-sky" href="/" target="_blank" rel="noreferrer">
-                        <p>Download</p>
-                    </a>
                 </div>
 
                 <div className=" mt-10">
