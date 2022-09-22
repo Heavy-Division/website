@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Dropdown } from './Dropdown';
 import { NavLink } from './NavLink';
-import { Menu, MenuItem } from './Menu';
+import {Menu, MenuItem, MenuItemExternal} from './Menu';
 import { navMap } from '../../data';
 
 export const MobileNav = () => {
@@ -53,7 +53,7 @@ export const MobileNav = () => {
                             </Link>
                             <MenuItem href="/downloads" title="Downloads" content={navMap.downloads} />
                             <MenuItem title="Projects" href="/projects" content={navMap.projects} />
-                            <MenuItem title="Community" href="" content={navMap.socials} />
+                            <MenuItemExternal title="Community" href="#community" content={navMap.socials} />
                         </div>
                     </Menu>
                 )}

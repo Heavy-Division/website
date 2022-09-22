@@ -13,7 +13,7 @@ type DropDownItemProps = {
 
 export const DropDownItem = (props: DropDownItemProps) => (
     <p className="px-2 text-lg transition hover:bg-slate-200 hover:text-blue-sky">
-        <Link href={props.href}>{props.children}</Link>
+        <a target="_blank" rel="noreferrer" href={props.href}>{props.children}</a>
     </p>
 );
 

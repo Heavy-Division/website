@@ -33,6 +33,23 @@ const List = (props: navMapProps) => (
     </div>
 );
 
+const ExternalList = (props: navMapProps) => (
+    <div>
+        <p className={`mb-2 text-xl font-bold ${props.className}`}>{props.title}</p>
+        <ul>
+            {props.content.map(({ name, url }) => (
+                <li key={name}>
+                    <a target="_blank" rel="noreferrer" href={url}>
+                        <p className="font-regular cursor-pointer text-slate-300 hover:text-blue-sky">
+                            {name}
+                        </p>
+                    </a>
+                </li>
+            ))}
+        </ul>
+    </div>
+);
+
 export const Footer = () => {
     const year = new Date().getFullYear();
     return (
@@ -48,7 +65,7 @@ export const Footer = () => {
                 <div className="md:max-w-1/3 grid grid-cols-3 place-items-start justify-items-center gap-x-4">
                     <List title="Menu" content={navMap.menu} />
                     <List title="Projects" content={navMap.projects} />
-                    <List title="Socials" content={navMap.socials} />
+                    <ExternalList title="Socials" content={navMap.socials} />
                 </div>
                 <div className="flex cursor-default flex-row gap-x-4 text-sm">
                     <FooterLink href="/">Source Code</FooterLink>
