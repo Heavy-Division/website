@@ -11,6 +11,7 @@ type cardMapProps = {
         href: string,
         body: string,
         image: string,
+        alt: string,
     }[],
 };
 
@@ -20,6 +21,7 @@ const ProjectCard = (props: projectCardProps) => (
             title={props.title}
             image={props.image}
             body={props.body}
+            alt={props.alt}
             className="md:shadow-2x cursor-pointer transition md:bg-navy"
         />
     </Link>
@@ -27,12 +29,13 @@ const ProjectCard = (props: projectCardProps) => (
 
 const ProjectMap = (props: cardMapProps) => (
     <>
-        {props.content.map(({ title, href, body, image }) => (
+        {props.content.map(({ title, href, body, image, alt }) => (
             <ProjectCard
                 title={title}
                 href={href}
                 body={body}
                 image={image}
+                alt={alt}
             />
         ))}
     </>

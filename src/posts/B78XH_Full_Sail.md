@@ -3,7 +3,7 @@ title: 'B78XH: Full Sail'
 date: '2022-09-21'
 authors:
    - 'Yoshi'
-category: 'UPDATE'
+category: 'Update'
 metaImage: '/img/fullsail.jpg'
 metaAlt: 'Heavy Division'
 ---
