@@ -53,7 +53,7 @@ const ExternalList = (props: navMapProps) => (
 export const Footer = () => {
     const year = new Date().getFullYear();
     return (
-        <footer>
+        <footer className="bg-navy">
             <div className="grid grid-rows-3 place-items-center align-middle">
                 <div className="grid grid-rows-2 justify-center">
                     <Image src="/svg/hdbanner.svg" height={45} width={250} />

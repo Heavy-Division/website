@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { Card, cardProps } from '../components/utils';
 import { cardData } from '../data';
 
@@ -16,15 +15,15 @@ type cardMapProps = {
 };
 
 const ProjectCard = (props: projectCardProps) => (
-    <Link href={props.href}>
+    <a href={props.href}>
         <Card
             title={props.title}
             image={props.image}
             body={props.body}
             alt={props.alt}
-            className="md:shadow-2x cursor-pointer transition md:bg-navy"
+            className="md:shadow-2x cursor-pointer transition hover:ring-2 ring-blue-sky md:bg-navy"
         />
-    </Link>
+    </a>
 );
 
 const ProjectMap = (props: cardMapProps) => (
@@ -42,7 +41,7 @@ const ProjectMap = (props: cardMapProps) => (
 );
 
 const Projects = () => (
-    <section className="my-32 min-h-screen">
+    <section className="my-32 max-h-fit">
         <div className="grid-col my-4 grid place-items-center gap-y-4">
             <h1 className="underline decoration-blue-tailwind decoration-8 underline-offset-8">Projects</h1>
             <p className="text-md mx-4 text-center md:text-xl">An overview of Heavy Division Projects. Click on each to explore it's repository</p>

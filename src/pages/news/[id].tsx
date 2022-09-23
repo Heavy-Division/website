@@ -77,7 +77,7 @@ const Post = ({ content: { authors, category, contentHtml, date, readingStats, t
             </div>
 
             <article
-                className="prose-md px-page prose mx-auto py-16 text-black"
+                className="prose-md px-page prose mx-auto py-16 text-xl text-black"
                 /* eslint-disable-next-line react/no-danger */
                 dangerouslySetInnerHTML={{ __html: contentHtml }}
             />
