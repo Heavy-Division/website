@@ -14,7 +14,7 @@ metaAlt: 'Heavy Division'
 * Regular development updates.
 * Information about new features.
 * Developer insights.
-* Featured videos from FlyByWire Simulations or our partners.
+* Featured videos from Heavy Division or our partners.
 * Any exciting information we want to share.
 
 We aim to keep the structures of each post similar so that you can easily find the information you are looking for or are interested in quickly.
