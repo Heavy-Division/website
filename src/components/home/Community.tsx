@@ -36,7 +36,7 @@ export const Community = () => {
     return (
         <section id="community">
             <div className="grid-col grid place-items-center">
-                <p className="mt-4 text-4xl font-black md:justify-start">Community Insights</p>
+                <p className="my-4 text-4xl font-black md:justify-start">Community Insights</p>
                 <div className="mb-12 h-fit bg-blue-tailwind p-8 md:w-3/4">
                     <p className="text-3xl font-extrabold">Statistics</p>
                     <div className="grid-col grid place-items-center gap-x-12 gap-y-2 md:flex md:justify-center">

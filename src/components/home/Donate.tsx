@@ -5,7 +5,7 @@ import { Button } from '../utils';
 export const Donate = () => (
     <section id="Donate" className="w-screen bg-white pb-12">
         <div className="grid grid-rows-3 place-items-center md:justify-center">
-            <p className="flex justify-center gap-x-4 text-5xl font-extrabold text-navy">
+            <p className="flex justify-center gap-x-4 text-5xl font-extrabold text-navy mt-8">
                 Donate
                 {' '}
                 <BiDonateHeart className="text-6xl text-navy" />

@@ -10,11 +10,13 @@ metaAlt: 'Heavy Division'
 
 ## Overview
 
-It's now been a year and a half since the Heavy Division project was founded, and SU10 has just released.
+It's now been a year and a half since the Heavy Division project was founded, and Sim Update 10 has just released.
 
 Starting as a solo project with a desire to improve upon the default Asobo 787-10, our team has grown into a staff of 6 with 4 currently on the development team, 1 developer trainee, and 1 media trainee.
 
-As the project continues to grow we will need additional staff, including type-rated 787 pilots. if you'd like to help please ping an admin on our discord or email us at [contact@hdsimulations.com](contact@hdsimulations.com)
+As the project continues to grow we will need additional staff, including type-rated 787 pilots.
+
+If you'd like to help, please ping an admin on our discord or email us at [contact@hdsimulations.com](contact@hdsimulations.com)
 
 ---
 
@@ -22,7 +24,7 @@ As the project continues to grow we will need additional staff, including type-r
 
 **Status**: Begun
 
-We've just entered the planning phase our custom fuel system, which will be our first. Over the past few months we've been working on transitioning most of the B78XH to a C++ framework compiled to Web Assembly (WASM).
+We've just entered the planning phase for our custom fuel system, which will be our first. Over the past few months we've been working on transitioning most of the B78XH to a C++ framework compiled to Web Assembly (WASM).
 
 What this means for the average user is that you can expect much better performance going forward and fewer fps drops. 
 
@@ -69,3 +71,5 @@ Whilst the B78XH remains a perfectly VATSIM capable plane, we need more hands on
 - Heavy Division API (Typescript/NestJS)
 - Discord Bot (Typescript)
 - Documentation
+
+If any of these projects interest you, please feel free to fill out our [application form](https://forms.gle/Z9A7rtF4FuywMjeQA) and indicate the areas you'd like to work on.

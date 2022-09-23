@@ -32,9 +32,7 @@ And that is why, it is with great excitement we are formally announcing the B789
 
 ### B798H
 
-Make no mistake, the Roadmap is simply an overview of where we are steering ship. It glances over the immense amount of planning, work, and detail that such a project demands.
-
-That is why we are actively expanding our team. You can read more [here]() if you're interested in joining us. 
+Make no mistake, the Roadmap is simply an overview of where we are steering the ship. It glances over the immense amount of planning, work, and detail that such a project demands.
 
 You may be wondering why we've decided to pursue a custom 787-9 model, rather than the current 787-10. 
 
@@ -42,9 +40,9 @@ We've discussed this at length and decided the pros of focusing our efforts on t
 
 In summary, the advantages of a 787-9 over a custom 787-10 model are as follows:
     
-1. The -9 variant is the most popular, there is more source material available to work from.
+1. Due to the -9 variant being the most common, there is more source material available to work from.
 
-2. As the most popular variant, we will be able to more easily find pilots we can consult for this project
+2. As the most popular variant, it makes finding type-rated pilots we can consult for this project easier.
 
 3. In the context of a simulator, the range of an airliner takes precedence over its passenger capacity. In a typical seating configuration, the -9 has a range well over 1,000nm above the -10, putting more long haul destinations within the pilot's reach.
 
@@ -54,5 +52,5 @@ While subtle differences in the flight model and other areas exist, we could the
 
 For that reason alone, we will need more 3D, texture, and animation developers to help get the project off the ground. 
 
-If you're interested in joining the team, please ping an admin on discord if you have any questions or fill out our [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSflPA5f4-qopkpgG_MAc46ooBJGWygljyPTCBlr2COsOK6G3w/viewform)
+If you're interested in joining the team, please ping an admin on discord if you have any questions or fill out our [application form](https://forms.gle/Z9A7rtF4FuywMjeQA)
 
