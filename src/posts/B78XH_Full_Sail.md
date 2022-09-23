@@ -44,8 +44,6 @@ Currently in late development. Comi, the founder of the project, has been hard a
 
 In early stage development. Some workarounds in the past were required to implement a basic VNAV with descent functionality.
 
-In the aircraft's current state
-
 With the flight model unlocked we can now fine-tune the autopilot logic, but will need more developers to work on this area.
 
 ### 3D Model
