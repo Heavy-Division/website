@@ -10,9 +10,11 @@ type downloadItemProps = {
 
 export const DownloadItem = (props: downloadItemProps) => (
     <div className="my-4 overflow-hidden px-4 text-white sm:my-3 sm:px-3 md:my-3 md:w-1/3 md:px-3 lg:my-1 lg:w-1/3 lg:px-1 xl:my-6 xl:w-1/3 xl:px-6">
-        <Button className="mt-12 h-16 w-48 border-2 border-white text-xl hover:bg-white hover:text-navy sm:text-sm">
-            <a href={props.href}>{props.children}</a>
-        </Button>
+        <a href={props.href}>
+            <Button className="mt-12 h-16 w-48 border-2 border-white text-xl hover:bg-white hover:text-navy sm:text-sm">
+                {props.children}
+            </Button>
+        </a>
         <hr className="mt-10" />
         <p className="mt-12 w-48 text-center text-xl sm:text-start sm:text-sm">{props.description}</p>
     </div>
