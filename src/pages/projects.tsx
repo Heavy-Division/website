@@ -21,7 +21,7 @@ const ProjectCard = (props: projectCardProps) => (
             image={props.image}
             body={props.body}
             alt={props.alt}
-            className="md:shadow-2x cursor-pointer transition hover:ring-2 ring-blue-sky md:bg-navy"
+            className="md:shadow-2x cursor-pointer ring-blue-sky transition hover:ring-2 md:bg-navy"
         />
     </a>
 );
