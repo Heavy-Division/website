@@ -22,9 +22,9 @@ const stableSummary = 'The Stable Build is our most tested and reliable version,
 const developmentSummary = 'The Development Build includes new features ready for public preview, but may encounter some bugs.';
 const experimentalSummary = 'The Experimental Build includes brand new features for public testing. No support will be provided for this build.';
 
-const stableDownloadUrl = "https://github.com/Heavy-Division/B78XH/releases/download/v0.1.14/B78XH-v0.1.14.zip";
-const devDownloadUrl = "https://github.com/Heavy-Division/B78XH/archive/refs/heads/main.zip";
-const experimentalDownloadUrl = "https://github.com/Heavy-Division/B78XH/archive/refs/heads/experimental.zip";
+const stableDownloadUrl = 'https://github.com/Heavy-Division/B78XH/releases/download/v0.1.14/B78XH-v0.1.14.zip';
+const devDownloadUrl = 'https://github.com/Heavy-Division/B78XH/archive/refs/heads/main.zip';
+const experimentalDownloadUrl = 'https://github.com/Heavy-Division/B78XH/archive/refs/heads/experimental.zip';
 
 const Downloads = () => (
     <div className="px-6 py-16">
