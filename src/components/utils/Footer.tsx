@@ -68,7 +68,11 @@ export const Footer = () => {
                     <ExternalList title="Socials" content={navMap.socials} />
                 </div>
                 <div className="flex cursor-default flex-row gap-x-4 text-sm">
-                    <FooterLink href="/">Source Code</FooterLink>
+                    <p className="font-regular cursor-pointer hover:text-blue-sky">
+                        <a href="https://github.com/Heavy-Division/website" target="_blank" rel="noreferrer">
+                            Source Code
+                        </a>
+                    </p>
                     |
                     <FooterLink href="/privacy">Privacy Policy</FooterLink>
                     |
