@@ -3,7 +3,7 @@ title: 'Heavy Division News'
 date: '2022-09-20'
 authors:
   - 'Yoshi'
-category: 'UPDATE'
+category: 'Announcements'
 metaImage: '/img/takeoff.jpg'
 metaAlt: 'Heavy Division'
 ---

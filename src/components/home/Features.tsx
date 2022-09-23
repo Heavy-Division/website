@@ -17,7 +17,7 @@ export const Features = () => (
                     </p>
                 </div>
             </div>
-            {cardData.features.map(({ title, body, image }) => (
+            {cardData.features.map(({ title, body, image, alt }) => (
                 <motion.div
                     key={title}
                     initial={{ opacity: 0, x: 50 }}
@@ -33,6 +33,7 @@ export const Features = () => (
                         title={title}
                         body={body}
                         image={image}
+                        alt={alt}
                     />
                 </motion.div>
             ))}

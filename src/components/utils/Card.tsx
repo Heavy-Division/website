@@ -4,7 +4,8 @@ import { ReactNode } from 'react';
 export type cardProps = {
     title: string,
     body: string,
-    image: string
+    image: string,
+    alt: string,
     className?: string,
     children?: ReactNode
 }
@@ -19,7 +20,7 @@ export const Card = (props: cardProps) => (
                 {props.body}
             </p>
             <div className="mt-8 flex max-h-24 justify-center">
-                <Image src={props.image} height={100} width={300} draggable={false} />
+                <Image src={props.image} height={100} width={300} alt={props.alt} draggable={false} />
             </div>
         </div>
         {props.children}
