@@ -57,6 +57,7 @@ class Welcome extends React.Component {
 
 function NavBar() {
     return <h1>Hello World</h1>
+};
 ```
 
 ✅ DO: Use Arrow Syntax to create new components
