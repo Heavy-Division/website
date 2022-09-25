@@ -77,12 +77,16 @@ export const NavBar = () => {
         <Link href={"www.github.com/heavy-division"}>
             Our Github Page
         </Link>
+    )
+};
 ```
 ✅ DO: Use next/link to link to internal URLs
 ```jsx
 export const NavBar = () => {
     return (
         <Link href={"/news"}>Our News Page</Link>
+    )
+};
 ```
 
 >Hint: For a quick overview of code styling errors, run `npm run lint` in the terminal. To automatically fix them run `npm run lint -- --fix`
