@@ -32,7 +32,7 @@ The site is written in Typescript, and there are some standard practices to appl
 
 ❌ DO NOT: Assign the "any" type to your props or any other data
 ```jsx
-navBarProps = {
+type navBarProps = {
     link: any,
     children: any,
 }
