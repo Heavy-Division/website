@@ -42,7 +42,7 @@ type navBarProps = {
 ```jsx
 navBarProps = {
     link: string,
-    title: ReactNode,
+    children: ReactNode,
 }
 ```
 
