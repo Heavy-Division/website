@@ -31,7 +31,7 @@ Our site is built using the [React](https://beta.reactjs.org/) library and the [
 The site is written in Typescript, and there are some standard practices to apply when working on our site.
 
 ❌ DO NOT: Assign the "any" type to your props or any other data
-```
+```jsx
 navBarProps = {
     link: any,
     children: any,
@@ -39,7 +39,7 @@ navBarProps = {
 ```
 
 ✅ DO: Be specific when assigning types
-```
+```jsx
 navBarProps = {
     link: string,
     title: ReactNode,
@@ -61,10 +61,12 @@ function NavBar() {
 ```
 
 ✅ DO: Use Arrow Syntax to create new components
-```
+```jsx
 export const NavBar = () => {
     return (
         <h1>Hello World</h1>
+        )
+      };
 ```
 
 <br><br>
