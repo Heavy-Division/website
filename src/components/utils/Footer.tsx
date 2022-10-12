@@ -57,12 +57,8 @@ export const Footer = () => {
             <div className="grid grid-rows-3 place-items-center align-middle">
                 <div className="grid grid-rows-2 justify-center">
                     <Image src="/svg/hdbanner.svg" height={45} width={250} />
-                    <span className="mt-3 inline-flex justify-center">
-                        <p className="font-bold">Inquiries:&nbsp;</p>
-                        <a href="mailto:contact@hdsimulations.com" className="transition hover:text-blue-sky">contact@hdsimulations.com</a>
-                    </span>
                 </div>
-                <div className="md:max-w-1/3 grid grid-cols-3 place-items-start justify-items-center gap-x-4">
+                <div className="-mt-12 md:max-w-1/3 grid grid-cols-3 place-items-start justify-items-center gap-x-4">
                     <List title="Menu" content={navMap.menu} />
                     <List title="Projects" content={navMap.projects} />
                     <ExternalList title="Socials" content={navMap.socials} />
