@@ -58,19 +58,12 @@ export const cardData = {
             href: 'https://github.com/Heavy-Division/B78XH',
         },
         {
-            title: 'Avionics and Systems',
+            title: 'Systems',
             body: 'A low-level approach to flight systems logic using Web Assembly',
             image: '/svg/WA.svg',
             alt: 'Web Assembly Systems',
             href: 'https://github.com/Heavy-Division/B78XH-wasm',
 
-        },
-        {
-            title: 'Sound',
-            body: 'Sound elements from cockpit to cabin.',
-            image: '/svg/waveform.svg',
-            alt: 'Sound',
-            href: '/',
         },
         {
             title: 'Web',
@@ -81,7 +74,7 @@ export const cardData = {
         },
         {
             title: 'Discord Bot',
-            body: 'An information, moderation, and utility bot for our Discord server, built on the Discord.JS API.',
+            body: 'A utility bot for our Discord server, built on the Discord.JS API.',
             image: '/svg/Discord.svg',
             alt: 'Discord Bot',
             href: 'https://github.com/Heavy-Division/heavy-division-bot',

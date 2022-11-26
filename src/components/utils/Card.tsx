@@ -16,11 +16,11 @@ export const Card = (props: cardProps) => (
             <p className="text-2xl font-extrabold lg:text-3xl">
                 {props.title}
             </p>
-            <p className="text-md flex">
+            <p className="text-md max-h-14 flex">
                 {props.body}
             </p>
             <div className="mt-8 flex max-h-24 justify-center">
-                <Image src={props.image} height={100} width={300} alt={props.alt} draggable={false} />
+                <Image src={props.image} height={100} width={300} alt={props.alt} objectPosition="center" draggable={false} />
             </div>
         </div>
         {props.children}
