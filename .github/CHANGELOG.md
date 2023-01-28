@@ -1,4 +1,9 @@
 ## Changelog
+##January 2023
+| *date*     | *prefix* | *description*                          |
+|------------|----------|----------------------------------------|
+| 01/20/2023 | chore     | Updated download link to the stable version |
+
 
 ## September 2022
 | *date*     | *prefix* | *description*                          |

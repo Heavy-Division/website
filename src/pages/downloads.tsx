@@ -1,7 +1,6 @@
 import React, { ReactNode } from 'react';
 import Image from 'next/image';
 import { Button } from '../components/utils';
-import {isObjectFlagSet} from "tsutils";
 
 type downloadItemProps = {
     children: ReactNode,
@@ -25,23 +24,23 @@ const stableSummary = 'The Stable Build is our most tested and reliable version,
 const developmentSummary = 'The Development Build includes new features ready for public preview, but may encounter some bugs.';
 const experimentalSummary = 'The Experimental Build includes brand new features for public testing. No support will be provided for this build.';
 
-const STABLE_URL = 'https://github.com/Heavy-Division/B78XH/releases/download/v0.1.14/B78XH-v0.1.14.zip';
-const DEV_URL = 'https://github.com/Heavy-Division/B78XH/archive/refs/heads/main.zip';
-const EXP_URL = 'https://github.com/Heavy-Division/B78XH/archive/refs/heads/experimental.zip';
+const stableDownloadUrl = 'https://github.com/Heavy-Division/B78XH/releases/download/v0.1.15/B78XH-v0.1.15.zip';
+const devDownloadUrl = 'https://github.com/Heavy-Division/B78XH/archive/refs/heads/main.zip';
+const experimentalDownloadUrl = 'https://github.com/Heavy-Division/B78XH/archive/refs/heads/experimental.zip';
 
 const Downloads = () => (
     <div className="px-6 py-16">
         <div className="flex justify-center">
-            <Image src="/svg/78x-side.svg" width={1000} height={330} alt="B78XH" draggable={false} objectFit="contain" layout="fixed" />
+            <Image src="/svg/78x-side.svg" alt="787-10_side" width={1000} height={330} draggable={false} className="fixed object-contain" />
         </div>
         <div className="flex justify-center">
-            <Image src="/svg/B78XH.svg" height={68} width={350} alt="B78XH" draggable={false} />
+            <Image src="/svg/B78XH.svg" alt="B78XH" height={68} width={350} draggable={false} />
         </div>
         <div className="flex justify-center">
             <div className="flex flex-col gap-x-5 sm:flex-row">
-                <DownloadItem href={STABLE_URL} description={stableSummary}>Stable</DownloadItem>
-                <DownloadItem href={DEV_URL} description={developmentSummary}>Development</DownloadItem>
-                <DownloadItem href={EXP_URL} description={experimentalSummary}>Experimental</DownloadItem>
+                <DownloadItem href={stableDownloadUrl} description={stableSummary}>Stable</DownloadItem>
+                <DownloadItem href={devDownloadUrl} description={developmentSummary}>Development</DownloadItem>
+                <DownloadItem href={experimentalDownloadUrl} description={experimentalSummary}>Experimental</DownloadItem>
             </div>
         </div>
     </div>
