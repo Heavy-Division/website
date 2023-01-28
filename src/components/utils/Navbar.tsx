@@ -33,7 +33,7 @@ export const MobileNav = () => {
             <span className={`fixed z-10 h-2 w-screen shadow-xl md:invisible ${isOpen && 'invisible'}`}>
                 <div className="mt-3 flex justify-center">
                     <Link href="/">
-                        <Image src="/svg/logo.svg" width={50} height={50} objectFit="contain" className="cursor-pointer" />
+                        <Image src="/svg/logo.svg" width={50} height={50} alt="logo" className="cursor-pointer object-contain" />
                     </Link>
                 </div>
             </span>
@@ -83,7 +83,7 @@ export const Navbar = () => {
         >
             <div className="invisible fixed top-5 left-20 cursor-pointer md:visible">
                 <Link href="/">
-                    <Image src="/svg/Banner.svg" height={40} width={200} />
+                    <Image src="/svg/Banner.svg" height={40} width={200} alt="banner" />
                 </Link>
             </div>
             <MobileNav />
