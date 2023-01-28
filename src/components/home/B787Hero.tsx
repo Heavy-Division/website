@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Container, Button } from '../utils';
+import * as Hero from '../../../public/img/Hero.jpg';
 
 export const B787Hero = () => (
     <section id="hero">
-        <Image src="/img/Hero.jpg" priority objectFit="cover" layout="fill" className="opacity-60" draggable={false} alt="Hero Image" />
+        <Image src={Hero} priority className="absolute object-cover h-screen w-screen opacity-60" draggable={false} alt="Hero Image" />
         <Container className="mx-auto grid h-screen max-w-6xl place-items-center md:max-w-7xl md:justify-end">
             <div className="z-10">
                 <Image src="/svg/B78XH.svg" objectFit="contain" draggable={false} height={60} width={300} alt="B78XH.svg" />

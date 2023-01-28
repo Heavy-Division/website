@@ -52,9 +52,11 @@ export const cardData = {
     projects: [
         {
             title: 'B78XH',
-            body: 'An enhancement modification to the default 787 Asobo Premium Deluxe Aircraft',
+            body: 'An enhancement modification to the default 787-10 for Microsoft Flight Simulator',
             image: '/svg/B78XH.svg',
             alt: 'B78XH',
+            height: 400,
+            width: 200,
             href: 'https://github.com/Heavy-Division/B78XH',
         },
         {
@@ -62,6 +64,8 @@ export const cardData = {
             body: 'A low-level approach to flight systems logic using Web Assembly',
             image: '/svg/WA.svg',
             alt: 'Web Assembly Systems',
+            height: 65,
+            width: 65,
             href: 'https://github.com/Heavy-Division/B78XH-wasm',
 
         },
@@ -70,13 +74,17 @@ export const cardData = {
             body: 'Web based projects such as our website and API',
             image: '/svg/React.svg',
             alt: 'Web',
+            height: 75,
+            width: 75,
             href: 'https://github.com/Heavy-Division/website',
         },
         {
             title: 'Discord Bot',
-            body: 'A utility bot for our Discord server, built on the Discord.JS API.',
+            body: 'A utility bot for our Discord server, built on the Discord.JS library',
             image: '/svg/Discord.svg',
             alt: 'Discord Bot',
+            height: 65,
+            width: 65,
             href: 'https://github.com/Heavy-Division/heavy-division-bot',
         },
         {
@@ -84,6 +92,8 @@ export const cardData = {
             body: 'Documentation for users and developers. Reviewed by real life 787 pilots.',
             image: '/svg/docs.svg',
             alt: 'Documentation',
+            height: 50,
+            width: 50,
             href: 'https://github.com/Heavy-Division/docs',
         },
         {
@@ -91,6 +101,8 @@ export const cardData = {
             body: 'Branding and design of Heavy Division products',
             image: '/svg/Figma.svg',
             alt: 'Design',
+            height: 40,
+            width: 50,
             href: 'https://github.com/Heavy-Division/branding',
         },
     ],

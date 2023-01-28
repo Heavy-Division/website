@@ -79,11 +79,11 @@ export const Navbar = () => {
     return (
         <nav
             className={`fixed top-0 z-50 h-20 w-screen 
-            ${scroll ? 'bg-navy shadow-md transition' : 'bg-transparent transition'}`}
+            ${scroll ? 'bg-navy-light drop-shadow-xl transition' : 'bg-transparent transition'}`}
         >
-            <div className="invisible fixed top-4 left-20 cursor-pointer md:visible">
+            <div className="invisible fixed top-5 left-20 cursor-pointer md:visible">
                 <Link href="/">
-                    <Image src="/svg/hdbanner.svg" height={40} width={200} />
+                    <Image src="/svg/Banner.svg" height={40} width={200} />
                 </Link>
             </div>
             <MobileNav />
