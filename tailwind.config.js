@@ -22,7 +22,10 @@ module.exports = {
         },
         extend: {
             borderStyle: ['hover'],
-            backgroundImage: { light: "url('/img/bg.jpg')" },
+            backgroundImage: {
+                light: "url('/img/bg.jpg')",
+                pattern: "url('/svg/pattern.svg')",
+            },
             colors: {
                 'navy': {
                     DEFAULT: '#000E30',

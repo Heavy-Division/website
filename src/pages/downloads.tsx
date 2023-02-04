@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import Image from 'next/image';
-import { Button } from '../components/utils';
+import { Button, Container } from '../components/utils';
 
 type downloadItemProps = {
     children: ReactNode,
@@ -29,21 +29,21 @@ const devDownloadUrl = 'https://github.com/Heavy-Division/B78XH/archive/refs/hea
 const experimentalDownloadUrl = 'https://github.com/Heavy-Division/B78XH/archive/refs/heads/experimental.zip';
 
 const Downloads = () => (
-    <div className="px-6 py-16">
-        <div className="flex justify-center">
-            <Image src="/svg/78x-side.svg" alt="787-10_side" width={1000} height={330} draggable={false} className="fixed object-contain" />
+    <Container className="mx-auto mt-48">
+        <div className="flex h-[50vh] justify-center">
+            <Image src="/svg/78x-side.svg" alt="787-10_side" width={1000} height={330} draggable={false} className="absolute mx-4 object-cover" />
         </div>
         <div className="flex justify-center">
             <Image src="/svg/B78XH.svg" alt="B78XH" height={68} width={350} draggable={false} />
         </div>
         <div className="flex justify-center">
-            <div className="flex flex-col gap-x-5 sm:flex-row">
+            <div className="flex flex-col gap-x-5 mb-10 sm:flex-row">
                 <DownloadItem href={stableDownloadUrl} description={stableSummary}>Stable</DownloadItem>
                 <DownloadItem href={devDownloadUrl} description={developmentSummary}>Development</DownloadItem>
                 <DownloadItem href={experimentalDownloadUrl} description={experimentalSummary}>Experimental</DownloadItem>
             </div>
         </div>
-    </div>
+    </Container>
 );
 
 export default Downloads;

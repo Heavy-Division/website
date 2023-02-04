@@ -6,23 +6,23 @@ export type cardProps = {
     body: string,
     image: string,
     alt: string,
+    height: number,
+    width: number,
     className?: string,
-    children?: ReactNode
 }
 
 export const Card = (props: cardProps) => (
     <div>
-        <div className={`mx-24 h-72 w-screen bg-navy p-2 px-12 text-white transition duration-300 hover:opacity-90 md:w-96 md:rounded-md ${props.className}`}>
+        <div className={`mx-24 h-72 w-96 bg-navy py-1 px-6 text-white transition duration-300 hover:opacity-90 md:w-96 md:rounded-md ${props.className}`}>
             <p className="text-2xl font-extrabold lg:text-3xl">
                 {props.title}
             </p>
             <p className="text-md max-h-14 flex">
                 {props.body}
             </p>
-            <div className="mt-8 flex max-h-24 justify-center">
-                <Image src={props.image} height={100} width={300} alt={props.alt} objectPosition="center" draggable={false} />
+            <div className="mt-8 object-contain flex justify-center">
+                <Image src={props.image} height={props.height} width={props.width} alt={props.alt} draggable={false} />
             </div>
         </div>
-        {props.children}
     </div>
 );

@@ -34,15 +34,15 @@ export const Community = () => {
         });
     }, []);
     return (
-        <section id="community">
+        <section id="community" className="h-fit w-screen z-10">
             <div className="grid-col grid place-items-center">
                 <p className="my-4 text-4xl font-black md:justify-start">Community Insights</p>
                 <div className="mb-12 h-fit bg-blue-tailwind p-8 md:w-3/4">
                     <p className="text-3xl font-extrabold">Statistics</p>
-                    <div className="grid-col grid place-items-center gap-x-12 gap-y-2 md:flex md:justify-center">
+                    <div className="grid-col -mt-8 grid place-items-center gap-x-12 gap-y-2 md:flex md:justify-center">
                         <Statistic icon={faCodeCommit} statCount={commitCount} statName="Commits" />
                         <Statistic icon={faPerson} statCount={contributorCount} statName="Contributors" />
-                        <Statistic icon={faArrowDown} statCount="50K+" statName="Downloads" />
+                        <Statistic icon={faArrowDown} statCount="60K+" statName="Downloads" />
                     </div>
                 </div>
             </div>

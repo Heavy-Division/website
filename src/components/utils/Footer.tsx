@@ -55,7 +55,7 @@ export const Footer = () => {
     return (
         <footer className="bg-navy">
             <div className="grid grid-rows-3 place-items-center align-middle">
-                <div className="grid grid-rows-2 justify-center">
+                <div className="grid grid-rows-2 justify-center mt-4">
                     <Image src="/svg/hdbanner.svg" height={45} width={250} alt="logo" />
                 </div>
                 <div className="-mt-12 md:max-w-1/3 grid grid-cols-3 place-items-start justify-items-center gap-x-4">

@@ -21,12 +21,6 @@
     overflow-x: hidden;
   }
 
-  #community {
-    background-image: url('/public/svg/pattern.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
   body {
     @apply overflow-x-hidden text-white bg-light bg-no-repeat bg-cover;
   }
