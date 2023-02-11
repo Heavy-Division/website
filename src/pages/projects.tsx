@@ -45,6 +45,7 @@ const ProjectMap = (props: cardMapProps) => (
                 width={width}
                 image={image}
                 alt={alt}
+                key={title}
             />
         ))}
     </>
