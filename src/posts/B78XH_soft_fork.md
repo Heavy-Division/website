@@ -21,7 +21,7 @@ This is what's known as a "hard fork".
 In a similar fashion, we aim to distinguish the B78XH from the default 787-10 aircraft. Hence, we've come up with the 
 solution of a "Soft Fork". A soft fork in simple terms, means that a user will still need the necessary premium deluxe 
 dlc to see our aircraft, as the model assets belong to Asobo. However, they should now see our mod as a separate aircraft
-![Image](/img/HeavyB78XHAircraft.PNG)
+![Image](/img/HeavyB78XHAircraft.png)
 
 ## Sounds 
 A big thanks to SHRModding who's provided custom flight deck, GEnx engine, and APU sounds for the aircraft. 
