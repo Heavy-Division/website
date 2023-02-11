@@ -29,7 +29,7 @@ We are aware of several bugs in the new sound pack, and are working to fix them 
 receive some feedback on the sounds, which you can share on our discord in the experimental thread.
 
 ## Livery 
-A big thank you to SHR Modding#6348 for painting the official Heavy Division B78XH Livery. Whilst the soft fork is in the experimental 
+A big thank you to  라즈#3444 for painting the official Heavy Division B78XH Livery. Whilst the soft fork is in the experimental 
 phase, this will be the only compatible livery. We plan to release a livery guide soon for creators to make their liveries 
 compatible with our aircraft. 
 

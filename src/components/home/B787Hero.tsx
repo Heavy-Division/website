@@ -5,7 +5,7 @@ import * as Hero from '../../../public/img/Hero.jpg';
 
 export const B787Hero = () => (
     <section id="hero">
-        <Image src={Hero} priority className="-z-1 absolute h-1/2 sm:h-3/4 w-screen object-cover opacity-60" draggable={false} alt="Hero" />
+        <Image src={Hero} priority className="-z-1 absolute h-1/2 w-screen object-cover opacity-60 sm:h-3/4" draggable={false} alt="Hero" />
         <Container className="mx-auto min-h-screen max-w-6xl">
             <div className="absolute bottom-12">
                 <div className="z-10 gap-x-8 py-2 sm:flex md:max-w-7xl">
