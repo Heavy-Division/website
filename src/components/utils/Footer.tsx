@@ -55,10 +55,10 @@ export const Footer = () => {
     return (
         <footer className="bg-navy">
             <div className="grid grid-rows-3 place-items-center align-middle">
-                <div className="grid grid-rows-2 justify-center mt-4">
+                <div className="mt-4 grid grid-rows-2 justify-center">
                     <Image src="/svg/hdbanner.svg" height={45} width={250} alt="logo" />
                 </div>
-                <div className="-mt-12 md:max-w-1/3 grid grid-cols-3 place-items-start justify-items-center gap-x-4">
+                <div className="md:max-w-1/3 -mt-12 grid grid-cols-3 place-items-start justify-items-center gap-x-4">
                     <List title="Menu" content={navMap.menu} />
                     <List title="Projects" content={navMap.projects} />
                     <ExternalList title="Socials" content={navMap.socials} />
