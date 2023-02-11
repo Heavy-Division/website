@@ -15,7 +15,7 @@ export const B787Hero = () => (
                             A refresh of the 787-10 for Microsoft Flight Simulator
                         </h4>
                     </div>
-                    <div className="z-10 grid place-items-center gap-y-2 text-2xl grid-col">
+                    <div className="z-10 grid gap-y-2 text-2xl grid-col">
                         <Link href="/downloads">
                             <Button className="h-12 w-48 bg-blue-tailwind hover:opacity-70">
                                 Download
