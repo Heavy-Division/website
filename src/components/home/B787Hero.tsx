@@ -6,22 +6,24 @@ import * as Hero from '../../../public/img/Hero.jpg';
 export const B787Hero = () => (
     <section id="hero">
         <Image src={Hero} priority className="absolute h-screen w-screen object-cover opacity-60" draggable={false} alt="Hero" />
-        <Container className="mx-auto grid h-screen max-w-6xl place-items-center md:max-w-7xl md:justify-end">
-            <div className="z-10">
+        <Container className="mx-auto grid max-w-6xl">
+            <div className="place-items-center py-10 md:max-w-7xl">
                 <Image src="/svg/B78XH.svg" className="object-contain" draggable={false} height={60} width={300} alt="B78XH.svg" />
                 <h4 className="mt-5">
                     A refresh of the 787-10 for Microsoft Flight Simulator
                 </h4>
-            </div>
-            <div className="grid-col z-10 grid justify-center gap-x-8 text-2xl md:grid-cols-2">
-                <Button className="mt-5 h-16 w-48 bg-navy-light p-3 hover:bg-white hover:text-navy-dark">
+                <div className="grid-col gap-y-2 z-10 grid justify-center gap-x-8 text-2xl md:grid-cols-2">
                     <Link href="/downloads">
-                        <p>Download</p>
+                        <Button className="bg-blue-tailwind h-12 w-48 hover:opacity-70">
+                            Download
+                        </Button>
                     </Link>
-                </Button>
-                <Button className="mt-5 h-16 w-48 border-2 border-white p-3 hover:bg-white hover:text-navy-dark">
-                    <Link href="#features">Learn More</Link>
-                </Button>
+                    <Link href="#features">
+                        <Button className="border-blue-sky border-2 h-12 w-48 hover:opacity-70">
+                            Learn More
+                        </Button>
+                    </Link>
+                </div>
             </div>
         </Container>
     </section>

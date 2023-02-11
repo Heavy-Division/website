@@ -6,7 +6,7 @@ export const Features = () => (
     <section id="features" className="w-screen bg-white">
         <Container className="mx-auto">
             <div
-                className="grid grid-cols-1 place-items-center py-10 md:max-w-7xl gap-4 lg:grid-cols-2 2xl:grid-cols-3"
+                className="grid grid-cols-1 place-items-center gap-4 py-10 md:max-w-7xl lg:grid-cols-2 2xl:grid-cols-3"
             >
                 <div className="h-[270px] p-10">
                     <div>

@@ -31,13 +31,13 @@ const experimentalDownloadUrl = 'https://github.com/Heavy-Division/B78XH/archive
 const Downloads = () => (
     <Container className="mx-auto mt-48">
         <div className="flex h-[50vh] justify-center">
-            <Image src="/svg/78x-side.svg" alt="787-10_side" width={1000} height={330} draggable={false} className="absolute mx-4 object-cover" />
+            <Image src="/svg/78x-side.svg" alt="787-10_side" width={1000} height={330} draggable={false} className="absolute mx-4 object-contain" />
         </div>
         <div className="flex justify-center">
             <Image src="/svg/B78XH.svg" alt="B78XH" height={68} width={350} draggable={false} />
         </div>
         <div className="flex justify-center">
-            <div className="flex flex-col gap-x-5 mb-10 sm:flex-row">
+            <div className="mb-10 flex flex-col gap-x-5 sm:flex-row">
                 <DownloadItem href={stableDownloadUrl} description={stableSummary}>Stable</DownloadItem>
                 <DownloadItem href={devDownloadUrl} description={developmentSummary}>Development</DownloadItem>
                 <DownloadItem href={experimentalDownloadUrl} description={experimentalSummary}>Experimental</DownloadItem>
