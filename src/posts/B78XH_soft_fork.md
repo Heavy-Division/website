@@ -45,3 +45,5 @@ donation, please feel free to message a moderator or admin with your confirmatio
 
 Overall, the new experimental version of our aircraft is shaping up to be a game-changer, and the team is working hard 
 to ensure that it is the best it can be. So be sure to check out the latest version and see for yourself what it has to offer!
+
+Available on our [downloads page](https://hdsimulations.com/downloads/)
