@@ -11,8 +11,8 @@
     font-size: 14px;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    background-image: url('/img/bg.png');
-    background-color: #000E30;
+    background: rgb(7,38,80);
+    background: linear-gradient(180deg, rgba(7,38,80,1) 0%, rgba(2,0,36,1) 100%);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -21,14 +21,8 @@
     overflow-x: hidden;
   }
 
-  #community {
-    background-image: url('/svg/pattern.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
   body {
-    @apply overflow-x-hidden text-white;
+    @apply overflow-x-hidden text-white bg-light bg-no-repeat bg-cover;
   }
 
   h2,h3,h4 {
