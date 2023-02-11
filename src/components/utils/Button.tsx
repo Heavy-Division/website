@@ -14,7 +14,7 @@ export const Button = (props: ButtonProps) => (
         onMouseLeave={props.onMouseLeave}
         onClick={props.onClick}
         type="button"
-        className={`duration-400 shadow-lg-dark-contrast rounded-xl py-2 transition ${props.className}`}
+        className={`duration-400 max-h-[42px] max-w-[200px] cursor-pointer transition ${props.className}`}
     >
         {props.children}
     </button>

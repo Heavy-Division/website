@@ -22,9 +22,16 @@ module.exports = {
         },
         extend: {
             borderStyle: ['hover'],
-            backgroundImage: { gradient: "url('/img/bg.png')" },
+            backgroundImage: {
+                light: "url('/img/bg.jpg')",
+                pattern: "url('/svg/pattern.svg')",
+            },
             colors: {
-                'navy': '#000E30',
+                'navy': {
+                    DEFAULT: '#000E30',
+                    light: '#072650',
+                    dark: '#011133',
+                },
                 'light-navy': '#202E4C',
                 'purple': '#7e5bef',
                 'pink': '#ff49db',

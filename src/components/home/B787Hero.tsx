@@ -1,24 +1,33 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Container, Button } from '../utils';
+import * as Hero from '../../../public/img/Hero.jpg';
 
 export const B787Hero = () => (
     <section id="hero">
-        <Image src="/img/image4.jpg" objectFit="cover" layout="fill" className="opacity-60" draggable={false} alt="Hero Image" />
-        <Container className="mx-auto grid h-screen max-w-6xl place-items-center md:max-w-7xl md:justify-end">
-            <div className="z-10">
-                <Image src="/svg/B78XH.svg" objectFit="contain" draggable={false} height={60} width={300} alt="B78XH.svg" />
-                <h4 className="mt-5">
-                    A refresh of the 787-10 for Microsoft Flight Simulator
-                </h4>
-            </div>
-            <div className="grid-col z-10 grid justify-center gap-x-8 text-2xl md:grid-cols-2">
-                <Button className="mt-5 h-16 w-48 bg-blue-sky p-3 hover:bg-blue-tailwind">
-                    <Link href="/downloads">Download</Link>
-                </Button>
-                <Button className="mt-5 h-16 w-48 border-4 border-blue-sky p-3 hover:bg-blue-sky">
-                    <Link href="#features">Learn More</Link>
-                </Button>
+        <Image src={Hero} priority className="-z-1 absolute h-3/4 w-screen object-cover opacity-60" draggable={false} alt="Hero" />
+        <Container className="mx-auto min-h-screen max-w-6xl">
+            <div className="absolute bottom-12">
+                <div className="z-10 md:max-w-7xl py-2 sm:flex gap-x-8">
+                    <div className="grid grid-col gap-y-4">
+                        <Image src="/svg/B78XH.svg" className="object-contain" draggable={false} height={60} width={300} alt="B78XH.svg" />
+                        <h4>
+                            A refresh of the 787-10 for Microsoft Flight Simulator
+                        </h4>
+                    </div>
+                    <div className="z-10 grid gap-y-2 text-2xl grid-col">
+                        <Link href="/downloads">
+                            <Button className="h-12 w-48 bg-blue-tailwind hover:opacity-70">
+                                Download
+                            </Button>
+                        </Link>
+                        <Link href="#features">
+                            <Button className="h-12 w-48 border-2 border-blue-sky hover:opacity-70">
+                                Learn More
+                            </Button>
+                        </Link>
+                    </div>
+                </div>
             </div>
         </Container>
     </section>

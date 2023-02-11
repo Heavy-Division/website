@@ -5,7 +5,7 @@ import { Button } from '../utils';
 export const Donate = () => (
     <section id="Donate" className="w-screen bg-white pb-12">
         <div className="grid grid-rows-3 place-items-center md:justify-center">
-            <p className="flex justify-center gap-x-4 text-5xl font-extrabold text-navy mt-8">
+            <p className="mt-8 flex justify-center gap-x-4 text-5xl font-extrabold text-navy">
                 Donate
                 {' '}
                 <BiDonateHeart className="text-6xl text-navy" />
@@ -19,7 +19,7 @@ export const Donate = () => (
                 *No profit is generated from donations. Donating does not guarantee access to additional content
                 nor its exclusivity if such content is ever given.
             </p>
-            <Button className="h-16 w-48 border-2 border-navy p-3 text-2xl text-navy
+            <Button className="h-12 w-48 border-2 border-navy text-2xl text-navy
                      hover:bg-navy hover:text-white"
             >
                 <Link href="https://opencollective.com/heavy-division-simulations">Donate</Link>
