@@ -1,5 +1,5 @@
 ---
-title: 'B78XH: Experimental Update: Soft Fork'
+title: 'B78XH: Experimental Update - Soft Fork'
 date: '2023-02-11'
 authors:
   - 'Eken'
