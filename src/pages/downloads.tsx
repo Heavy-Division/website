@@ -43,7 +43,7 @@ const Downloads = () => (
                     href={downloadURL}
                     description="Available only for the premium deluxe version of Microsoft Flight Simulator 2020"
                 >
-                    v1.2.0
+                    v0.2.0
                 </DownloadItem>
             </div>
         </div>
