@@ -11,7 +11,7 @@
     "@types/react-dom": "^18.0.9",
     "framer-motion": "^10.0.1",
     "gray-matter": "^4.0.3",
-    "marked": "^4.1.1",
+    "marked": "^6.0.0",
     "next": "^13.1.6",
     "next-images": "^1.8.4",
     "node-html-to-image": "^3.2.4",
