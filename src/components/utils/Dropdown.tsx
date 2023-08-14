@@ -33,7 +33,7 @@ export const Dropdown = (props: DropDownProps) => {
                         className="inline-flex font-semibold"
                     >
                         {props.children}
-                        <FaChevronLeft className={`z-40 mt-[4px] ml-1 text-blue-sky ${isShown && '-rotate-90 transition'} ${!isShown && 'transition'}`} />
+                        <FaChevronLeft className={`z-40 ml-1 mt-[4px] text-blue-sky ${isShown && '-rotate-90 transition'} ${!isShown && 'transition'}`} />
                     </span>
                 </p>
             </Link>

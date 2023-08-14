@@ -37,7 +37,7 @@ export const MobileNav = () => {
                     </Link>
                 </div>
             </span>
-            <div className="visible absolute top-2 left-3 z-30 md:invisible" onClick={() => setOpen(!isOpen)}>
+            <div className="visible absolute left-3 top-2 z-30 md:invisible" onClick={() => setOpen(!isOpen)}>
                 <span className="flex h-16 w-10 cursor-pointer flex-col place-content-center transition md:hidden">
                     <div className={`${isOpen && 'translate-y-[3px] rotate-45'} h-[3px] rounded-full bg-white duration-200`} />
                     <div className={`${isOpen ? 'h-0' : 'my-[5px] h-[3px]'} rounded-full bg-white`} />
@@ -81,7 +81,7 @@ export const Navbar = () => {
             className={`fixed top-0 z-50 h-20 w-screen 
             ${scroll ? 'bg-navy-light drop-shadow-xl transition' : 'bg-transparent transition'}`}
         >
-            <div className="invisible fixed top-5 left-20 cursor-pointer md:visible">
+            <div className="invisible fixed left-20 top-5 cursor-pointer md:visible">
                 <Link href="/">
                     <Image src="/svg/Banner.svg" height={40} width={200} alt="banner" />
                 </Link>

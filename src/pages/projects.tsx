@@ -58,7 +58,7 @@ const Projects = () => (
                 <h1 className="underline decoration-blue-tailwind decoration-8 underline-offset-8">Projects</h1>
                 <p className="text-md mx-4 text-center md:text-xl">An overview of Heavy Division Projects. Click on each to explore it's repository</p>
             </div>
-            <div className="mx-auto grid grid-cols-1 max-w-7xl grid-cols-1 place-items-center md:grid-cols-2 gap-y-6 md:gap-x-4 lg:grid-cols-3">
+            <div className="mx-auto grid max-w-7xl grid-cols-1 place-items-center gap-y-6 md:grid-cols-2 md:gap-x-4 lg:grid-cols-3">
                 <ProjectMap content={cardData.projects} />
             </div>
         </Container>
