@@ -1,10 +1,10 @@
 // source code modified from https://github.com/flybywiresim/website
 
+import * as fs from 'fs';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Image from 'next/image';
 import nodeHtmlToImage from 'node-html-to-image';
 import { v4 } from 'uuid';
-import * as fs from 'fs';
 import Head from 'next/head';
 import { getAllPostIds, getPostContent, PostContent } from '../../lib/news/posts';
 import { Container } from '../../components/utils';

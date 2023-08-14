@@ -20,7 +20,7 @@ export const DownloadItem = (props: downloadItemProps) => (
     </div>
 );
 
-const downloadURL = 'https://github.com/Heavy-Division/B78XH/archive/refs/heads/experimental.zip';
+// const downloadURL = 'https://github.com/Heavy-Division/B78XH/archive/refs/heads/experimental.zip';
 
 const Downloads = () => (
     <Container className="mx-auto mt-48">
@@ -39,12 +39,17 @@ const Downloads = () => (
         </div>
         <div className="flex justify-center">
             <div className="mb-10 flex flex-col gap-x-5 sm:flex-row">
-                <DownloadItem
+
+                <p className="mt-10 max-w-[350px] text-lg">
+                    B78XH v0.2.0 is deprecated and no longer supported at this time,
+                    but we'll be back. Please use the default version of the 787.
+                </p>
+                {/* <DownloadItem
                     href={downloadURL}
                     description="Available only for the premium deluxe version of Microsoft Flight Simulator 2020"
                 >
                     v0.2.0
-                </DownloadItem>
+                </DownloadItem> */}
             </div>
         </div>
     </Container>
