@@ -39,12 +39,16 @@ const Downloads = () => (
         </div>
         <div className="flex justify-center">
             <div className="mb-10 flex flex-col gap-x-5 sm:flex-row">
-                <DownloadItem
+
+                <p className="max-w-[350px] mt-10 text-lg">
+                    B78XH v0.2.0 is deprecated and no longer supported at this time, 
+                    but we'll be back. Please use the default version of the 787.</p> 
+                {/* <DownloadItem
                     href={downloadURL}
                     description="Available only for the premium deluxe version of Microsoft Flight Simulator 2020"
                 >
                     v0.2.0
-                </DownloadItem>
+                </DownloadItem> */}
             </div>
         </div>
     </Container>
